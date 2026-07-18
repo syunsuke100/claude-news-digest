@@ -148,12 +148,17 @@ def _extract_json(text):
 
 def _call_gemini(prompt, model, key):
     url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
-           f"{model}:generateContent?key={key}")
+           f"{model}:generateContent")
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"temperature": 0.3, "maxOutputTokens": 8192},
     }
-    r = requests.post(url, json=body, timeout=90)
+    r = requests.post(
+        url,
+        headers={"x-goog-api-key": key, "Content-Type": "application/json"},
+        json=body,
+        timeout=90,
+    )
     r.raise_for_status()
     return r.json()["candidates"][0]["content"]["parts"][0]["text"]
 
