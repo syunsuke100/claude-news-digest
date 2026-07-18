@@ -1,0 +1,49 @@
+name: Claude News Digest
+
+on:
+  schedule:
+    # 07:00 JST = 22:00 UTC(前日)。GitHub の cron は UTC 指定。
+    - cron: "0 22 * * *"
+  workflow_dispatch: {}   # Actions タブから手動実行できるようにする
+
+permissions:
+  contents: write          # docs/ をコミットして戻すために必要
+
+concurrency:
+  group: news-digest
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Build digest
+        env:
+          # 3つとも Repository secrets。値はログ・成果物のどこにも出ない。
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
+          LLM_MODEL:    ${{ secrets.LLM_MODEL }}
+          LLM_API_KEY:  ${{ secrets.LLM_API_KEY }}
+          # 必要なら上書き:
+          # NEWS_QUERY: "Anthropic Claude"
+        run: python main.py
+
+      - name: Commit results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --staged --quiet; then
+            echo "変更なし。コミットをスキップします。"
+          else
+            git commit -m "chore: daily digest $(date -u +%Y-%m-%d)"
+            git push
+          fi
