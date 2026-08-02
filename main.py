@@ -559,6 +559,9 @@ def notify_discord(digest, fetched_count, generated_at):
     """
     webhook = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
     if not webhook:
+        # URL 自体は出さないが、未設定である事実だけは切り分け用に残す。
+        print("Discord 通知: DISCORD_WEBHOOK_URL が未設定のためスキップします。",
+              file=sys.stderr)
         return
 
     page_url = os.environ.get("PAGE_URL", "").strip()
