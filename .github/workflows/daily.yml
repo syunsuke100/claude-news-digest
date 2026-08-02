@@ -32,6 +32,9 @@ jobs:
           LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
           LLM_MODEL:    ${{ secrets.LLM_MODEL }}
           LLM_API_KEY:  ${{ secrets.LLM_API_KEY }}
+          # Discord 通知(任意)。DISCORD_WEBHOOK_URL を設定した時だけ通知する。
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          PAGE_URL:            ${{ vars.PAGE_URL }}
           # 必要なら上書き:
           # NEWS_QUERY: "Anthropic Claude"
         run: python main.py

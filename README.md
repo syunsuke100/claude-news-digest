@@ -115,6 +115,33 @@ New repository secret** から、次の3つを登録します。
 - 対応プロバイダを増やしたい場合は、`main.py` に `_call_xxx` 関数を1つ追加して
   `_PROVIDERS` に登録してください。呼び出し側の変更は不要です。
 
+## Discord に通知する(任意)
+
+毎朝のダイジェストを Discord チャンネルにも通知できます。見出し・全体要約・
+重要トピックと、公開ページへのリンクを1メッセージで送ります。
+`DISCORD_WEBHOOK_URL` を設定したときだけ有効になり、未設定なら従来どおり
+ページ生成のみを行います(通知失敗時もページ生成は壊れません)。
+
+### 1. Discord の Webhook URL を取得する
+
+通知したいチャンネルの **チャンネル設定 → 連携サービス(Integrations) →
+ウェブフック → 新しいウェブフック** から Webhook を作成し、
+**ウェブフック URL をコピー** します。
+
+### 2. Secrets / Variables を登録する
+
+リポジトリの **Settings → Secrets and variables → Actions** で登録します。
+
+| 種別 | Name | 値 | 説明 |
+|---|---|---|---|
+| **Secret** | `DISCORD_WEBHOOK_URL` | 取得した Webhook URL | 通知先。設定時のみ通知が有効になる |
+| **Variable** | `PAGE_URL` | `https://<ユーザー名>.github.io/<リポジトリ名>/` | 通知に載せる公開ページの URL |
+
+- `DISCORD_WEBHOOK_URL` は URL 自体が認証情報を兼ねるため、必ず **Secret** に
+  登録してください(Variables は平文表示されます)。
+- `PAGE_URL` は秘密情報ではないため Variable で構いません。未設定でも通知は
+  届きますが、ページへのリンクは付きません。
+
 ## ローカルでの動作確認
 
 ```bash

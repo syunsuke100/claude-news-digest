@@ -13,10 +13,12 @@ LLM で「無関係除外・重複統合・翻訳・全体要約・トピック�
   - LLM が失敗した日も、記事リストのみでページを成立させる(壊さない)。
 
 環境変数(すべて GitHub Actions の Repository secrets から注入):
-  LLM_PROVIDER  必須  gemini | groq | mistral
-  LLM_MODEL     必須  各プロバイダのモデル名
-  LLM_API_KEY   必須  API キー
-  NEWS_QUERY    任意  既定 "Anthropic Claude"
+  LLM_PROVIDER         必須  gemini | groq | mistral
+  LLM_MODEL            必須  各プロバイダのモデル名
+  LLM_API_KEY          必須  API キー
+  NEWS_QUERY           任意  既定 "Anthropic Claude"
+  DISCORD_WEBHOOK_URL  任意  設定時のみ Discord に当日のダイジェストを通知
+  PAGE_URL             任意  Discord 通知に載せる公開ページの URL
 
 依存: feedparser, requests
 """
@@ -548,6 +550,63 @@ def render_html(digest, articles_fallback, fetched_count, generated_at):
 """
 
 
+# ---------------------------------------------------------------- Discord 通知
+def notify_discord(digest, fetched_count, generated_at):
+    """当日のダイジェストを Discord に通知する(要約+公開ページ URL)。
+
+    DISCORD_WEBHOOK_URL が未設定なら何もしない(通知機能はオプション扱い)。
+    Webhook URL・失敗内容はログに出さない(秘匿要件・壊さない設計に合わせる)。
+    """
+    webhook = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
+    if not webhook:
+        return
+
+    page_url = os.environ.get("PAGE_URL", "").strip()
+    date_label = generated_at.strftime("%Y.%m.%d")
+    weekday = "月火水木金土日"[generated_at.weekday()]
+
+    if digest:
+        published = len(digest["articles"])
+        title = digest["headline"] or "本日のダイジェスト"
+        lines = [digest["summary"]] if digest["summary"] else []
+        if digest["key_topics"]:
+            lines.append("")  # 空行で区切る
+            lines.append("**重要トピック**")
+            for t in digest["key_topics"]:
+                note = f" — {t['note']}" if t["note"] else ""
+                lines.append(f"・**{t['title']}**{note}")
+        description = "\n".join(lines)
+    else:
+        published = 0
+        title = "本日は新着なし" if fetched_count == 0 else "本日のダイジェスト"
+        description = ("直近48時間に対象記事が見つかりませんでした。"
+                       if fetched_count == 0
+                       else "本日は要約を生成できませんでした。ページに記事一覧のみ掲載しています。")
+
+    if page_url:
+        description = f"{description}\n\n[▶ ダイジェストを開く]({page_url})"
+
+    # Discord embed の description 上限は 4096 文字。安全側で切り詰める。
+    description = description[:4000]
+
+    embed = {
+        "title": f"Claude News Digest — {date_label}({weekday})",
+        "description": description,
+        "color": 0xF2B45C,  # ページのアンバー色に合わせる
+        "footer": {"text": f"取得 {fetched_count} 件 → 掲載 {published} 件 · 自動生成"},
+    }
+    if page_url:
+        embed["url"] = page_url
+
+    try:
+        r = requests.post(webhook, json={"embeds": [embed]}, timeout=30)
+        r.raise_for_status()
+        print("Discord へ通知しました。")
+    except Exception:
+        print("WARN: Discord への通知に失敗しました(ページ生成は完了しています)。",
+              file=sys.stderr)
+
+
 # ---------------------------------------------------------------- main
 def main():
     os.makedirs(ARCHIVE, exist_ok=True)
@@ -568,6 +627,8 @@ def main():
 
     published = len(digest["articles"]) if digest else min(fetched, MAX_ITEMS)
     print(f"完了: 取得 {fetched} 件 → 掲載 {published} 件({now:%Y-%m-%d %H:%M} JST)")
+
+    notify_discord(digest, fetched, now)
 
 
 if __name__ == "__main__":
