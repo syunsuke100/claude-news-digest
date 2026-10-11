@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1116">
+<title>Claude News Digest — 2026.10.11</title>
+<style>
+  :root {
+    --bg:#0e1116; --surface:#151a21; --line:#232a33; --line2:#2c343e;
+    --text:#e6edf3; --muted:#8b98a5; --dim:#5b6672;
+    --amber:#f2b45c;
+    --mono: ui-monospace,"SF Mono","JetBrains Mono","Roboto Mono",Menlo,monospace;
+    --sans: -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",
+            "Noto Sans JP","BIZ UDPGothic","Segoe UI",sans-serif;
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--sans); line-height:1.65;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) 3rem env(safe-area-inset-left);
+  }
+  .wrap { max-width:680px; margin:0 auto; padding:0 18px; }
+
+  header { padding:26px 0 8px; }
+  .eyebrow {
+    font-family:var(--mono); font-size:11px; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--amber);
+  }
+  .date {
+    font-family:var(--mono); font-weight:600; letter-spacing:.02em;
+    font-size:34px; margin:6px 0 2px; font-variant-numeric:tabular-nums;
+  }
+  .date .wd { color:var(--dim); font-size:20px; margin-left:.4em; }
+  .status {
+    font-family:var(--mono); font-size:11.5px; color:var(--muted);
+    border:1px solid var(--line); border-radius:8px;
+    padding:9px 12px; margin-top:14px;
+    display:flex; flex-wrap:wrap; gap:6px 16px; align-items:center;
+  }
+  .status b { color:var(--text); font-weight:600; }
+  .status .amber { color:var(--amber); }
+  .status .sep { color:var(--line2); }
+  .pulse {
+    width:7px; height:7px; border-radius:50%; background:var(--amber);
+    box-shadow:0 0 0 0 rgba(242,180,92,.55); animation:pulse 2.6s ease-out infinite;
+  }
+  @keyframes pulse {
+    0%{box-shadow:0 0 0 0 rgba(242,180,92,.5);}
+    70%{box-shadow:0 0 0 7px rgba(242,180,92,0);}
+    100%{box-shadow:0 0 0 0 rgba(242,180,92,0);}
+  }
+
+  .summary { padding:22px 0 4px; }
+  .headline { font-size:22px; line-height:1.5; margin:0 0 10px; }
+  .lede { font-size:15px; color:var(--text); margin:0; }
+  .lede.muted { color:var(--muted); }
+
+  .panel {
+    border:1px solid var(--line); border-radius:12px;
+    background:var(--surface); padding:16px 16px 12px; margin-top:18px;
+  }
+  .panel-title {
+    font-family:var(--mono); font-size:11px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--amber); margin:0 0 12px;
+  }
+
+  .arts { list-style:none; margin:0; padding:0; }
+  .art { border-top:1px solid var(--line); }
+  .art:first-child { border-top:0; }
+  .art a {
+    display:block; padding:11px 2px; text-decoration:none; color:inherit;
+  }
+  .art a:hover .ttl { color:var(--amber); }
+  .art a:focus-visible { outline:2px solid var(--amber); outline-offset:2px; border-radius:6px; }
+  .cat {
+    display:inline-block; font-family:var(--mono); font-size:10.5px;
+    color:var(--amber); border:1px solid var(--line2); border-radius:4px;
+    padding:1px 6px; margin-bottom:4px; letter-spacing:.03em;
+  }
+  .ttl { display:block; font-size:14.5px; font-weight:500; line-height:1.5; }
+  .src {
+    display:block; font-family:var(--mono); font-size:11px;
+    color:var(--dim); margin-top:3px;
+  }
+
+  footer {
+    margin-top:26px; padding-top:16px; border-top:1px solid var(--line);
+    font-family:var(--mono); font-size:11px; color:var(--dim);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+  footer a { color:var(--muted); text-decoration:none; }
+
+  @media (prefers-reduced-motion: reduce) { .pulse { animation:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Claude News Digest</div>
+    <div class="date">2026.10.11<span class="wd"> 日</span></div>
+    <div class="status">
+      <span class="pulse" aria-hidden="true"></span>
+      <span>UPDATED <b>09:40</b> JST</span>
+      <span class="sep">/</span>
+      <span>取得 <b>91</b> 件 &rarr; 掲載 <b class="amber">20</b> 件</span>
+      <span class="sep">/</span>
+      <span>直近48h</span>
+    </div>
+  </header>
+
+  <main>
+      <section class="summary">
+        <h1 class="headline">本日のダイジェスト</h1>
+        <p class="lede muted">本日は要約を生成できませんでした。記事一覧のみ掲載しています。</p>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel-title">記事一覧(掲載 20 件)</h2>
+        <ul class="arts">
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE01d000cFI5RFRrck1lM2xrNWI4MHU5WmpYYndfek5lU1RRMnhvd1EyNnRLbXJlZUtqdEMxNWQ4bHdkWjEtTnNwdWxEUDZEMU1fNzNxNQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">「AIをいじめないで」Anthropic、Claudeへの虐待を禁止 - ASCII.jp</span>
+            <span class="src">ASCII.jp</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5uOHFBaTdRY1ctczVCbW5nNEFvNTNSY3RDRDVUeEM5c0dQbnh3WmdCRWJMVk5EWnZ4VUtCdENacUw1WU5hM1pldU9VcFUxNENielJjeUVrYzloYkxuNzBoRWZ6M2FTYm5SUXpYOUVwSnFrUzh3STFpbUc2OFNtSG8?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">「Claude」を虐めるな！ Anthropicが規約変更でAIへの虐待行為を禁止（窓の杜） - Yahoo!ニュース</span>
+            <span class="src">Yahoo!ニュース</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE5iZEpUcWctREhIb2JnWHVnTjdFc2lVaTFKMkhSYUNrU3F2N2lhMFFVaDdZOHVWRTRUNGtGck9sb0FNazVmR1JPcUpTTGZYVUlsQ2c?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、「Claude」への虐待を禁止 選挙・武器・監視のルールも改定 - CNET Japan</span>
+            <span class="src">CNET Japan</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE5CYTNqdHdnVnByVTBaN0ZnSURNTE13cVhCd2h2LUlWV19oRFhWTlhnOXJEYWFYV3BfRlJUUGxidm16V1FEZnkwbnRzd3ZNWFp3cXo1c0RpYVhwSzhhcHdKRUhuS3h5d2p1VUNNbkd5cXdSR3BfWFE?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">「Claude」を虐めるな！ Anthropicが規約変更でAIへの虐待行為を禁止／どんな問題があるのか考えてみた【やじうまの杜】 - 窓の杜</span>
+            <span class="src">窓の杜</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNTkZMVlRJbkQ4TkhBMDJHcW44YVRweUh6TlRPWE90R1FzWTNRT29FWDYyUXB5cnR2cHZFQjhiMElzUXdKTjR0U3hoUkpfYVFCbXVCaGV1QUJsWFhPWW10ZndyNGEya003Nk5qMlc3dEhkYXRNeEpubmVSTmtkZ1F2MFJaaEduTVZENmRfUGE0NjVuQdIBlwFBVV95cUxOV1hINEdBdERXZmRYTlhpTHBrTElhZE5YOGpMRGQxYmNpdFFhcHRRSHo5cDhFQTh4VERnNzJmNFZsZ0c1YXRVcHlTWmZfb2Z3YUN3MGN1dzVISUdmUnllNGFpSkw0YldfOTBFMmk1Wlh6YTRMcldLbzJRTFg4bllIb1paSFVoOHMwWElXM3FSbUZlRHZCd0l3?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropicが小型AIモデル「Claude Haiku 5.5」を発表／Mistral AIが大規模言語モデル「Mistral Large 4」を公開 - ｄメニューニュース</span>
+            <span class="src">ｄメニューニュース</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxNT2QzeWFNWE90eTQzcjRNLUtmbHBYNE43RWhGaGtfQjdtTzBDbVowMEhaU1kwNEJPQ1BoWTBNYng1TW85TWU4eFZjbUZjMDlpeTRJb0FfWFdnTXI3X2FRREFWLTZSVUs4dnN6eldOQ2Z6dzNxYlJQX28wWVBiaGVFZ1BHRXZNeVNJbXBrc09vWkl1M1ZoNnRDSlYybHNKczBN?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claudeが警察に架空の目撃情報を送信、大学サーバーでコマンド実行も―AnthropicがAIの「意図しない行動」4類型を報告 - 合同会社ロケットボーイズ</span>
+            <span class="src">合同会社ロケットボーイズ</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxOdjhyODA4NmZpSXpsMm9rVGVLNVJoR2pxVUFoUVlIR3puOU9JYUpDcmFkSzIxOWZJcHFOYmFDZ0wtS1h6eXd1QnhIc2t5U0ljS0pqVXg0Z2daeVp6bzNXaUt1NXp0X3NzcXU3TWtNclNfRU1DdE4xeGd0Q21WakVjZzJDOUJ4d21OS25rckhWdHppODg?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claude Team無料1年とAPIクレジット1,000ドルを一時停止 - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiQkFVX3lxTE1vZXpLVVVMTUQ2d1ZBQTEtZVFJRHZrbW85MHBzTTNjRUdHdllWcDZXMDVxcGV6WnI3emtsc1NwOVpUQQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">「AIをいじめないで」――Anthropic、Claudeへの虐待的言動を11月12日から利用ポリシーで禁止 - shiritomo</span>
+            <span class="src">shiritomo</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQSGVBR2JYSUZHR1NUR0F5MTRYa2JadmIzVWdRSWg4QXpaQk1YXzVyUi1sbnJSa2NDUXZLdFlMUWlVRmI1M2FhU2Y4RTF1R0E5anhJRzRsWHVIZm9KTERzTDEzUjdmWXhBek1oUmVJdWJDcE1QV28xTEtkTDBNSHhpMEVqXzh1WjBrUUJ0RTJ3?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">「AIをいじめないで」Anthropic、Claudeへの虐待を禁止 (アスキー) - Yahoo!ニュース</span>
+            <span class="src">Yahoo!ニュース</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5CTWcyZG1WOTVJOWljWF8wSkpPdV9aSWFHWVFxVm51MENOdGNzQ0cwOEw2ZnRXdXBsVVB5TjV0R1NURzQ4WHV4Tk9IcVlZNHlzdW9BTTVoOThWcC1TYmJIZHFCd2VhOGZxQUFmVWpqSTJjN0FXay04UlBDWF9MZ3c?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Google、業務エージェント「Gemini agent」でAnthropicのClaudeも利用可能に——エージェントとモデルを切り離し、作業ごとに最適なモデルを選ぶ - BRIDGE（ブリッジ）</span>
+            <span class="src">BRIDGE（ブリッジ）</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQVTdqVnBBZ01MQzUtNGFOY1FMWTlNVng3QWFNTkp6ZTNmWjBlMzVDRlVITENGaVlVOXFDZ2hoLUVpUWxRRnZuMHUxYkhMQ1dwYmp3ZHdFUHc4NzBVdnJTM29WejI4ellUbFg0b0VDUDVXRXZGM2wxVlZMSDZhNzFPYzdMOXRndVBZRUlzaFBnMHlPZw?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claude Code Projects、ウェイトリストのPro・Max全ユーザーに提供開始 - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMisANBVV95cUxNNkdjSUl1MVBncEVPOGFOWTJfVXdjVjN5dnlNQk1lMEdlNUZTSXBHY2hOM200ZHMyczRXSVJTU0tHYXUtUmg0ZGJFU3pkZko5Ul9MM0JGVFdyblI2TjhYRTNNVTJUZ094czVYcnJ6V2VHT0E2TU5RUkhRUGlIaHdDd2M2RzRpWGZiVURGRXp4N2ZmeFZqdWgyajh1dTNBcWpwYzlxYmgtOGxaZGtyZVpQRzAtMzg4ZE83UVJJZ3NqOTdfcVNBUlFBdm9zR09xS1g2SHRHWWhCZExoYVNTejBZd2Q2RHp2ald3VmJTVnhsbzBLeVRiTDBUVVdiaU50M1Z3OW1HZmdHUndLZjNwVDJXT0hJVlNqVUNKTVV5NC13WG0xTGRZamwxREhYNlJDWUpUMEVSRlJ3QkRPLXpKbUlNdFp5QWY0eWdDZC00cVA4MW5VeVMydGx2MEVVaktfcGpxMUJUMWd1UkhYcVl6RTl4eTNVdlBDSTMwOExqbGtrdURZb0E1M0RHS0xaQVQxcGZiZFNGeDJlbVZWRmdneUNjRVM3SXJHaTAyckMyVkp2NE8?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claude「Mythos 5」が政府系サイトに侵入 Anthropic、全社内テストのネット接続を遮断 - Yellow.com</span>
+            <span class="src">Yellow.com</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE8xU1lYa29veFU1QWpkX2FVcUgwOGZlWFhmSE5zRjJTbUk0bDVtTDJYbXZvai1ZX1BKa05xdDZtQXctQ0Z3Wmd2NjRacTV6RG9hT0lmaWx6dkxNVzhLRXIwcWFJeEg3cTlyRUxvdVdjZm9ibmNQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claudeへの執拗な虐待行為で利用者を停止処分へ 新ポリシー発表 - BigGo ファイナンス</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE04RkYxYzlSN0dqOUUtcHNUX19pYUtRWEhZczdESWhYWVJ5M3J1bzFfZ0VOekxTS1FXa0hvanJCRHl4eG1FOFRJQzZ0cVE3Vm9Sc3dPbm96TG1IZGVfN1I1V200b1l1UXZObWcw?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropicが「Claudeに対する持続的かつ不必要な虐待・残酷な行為禁止」などを利用規約に追加 - GIGAZINE</span>
+            <span class="src">GIGAZINE</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9nMVJ5UFdUZjdjREQzUklnOG0xOVFiNkFadkh5NFI2Y2xlYVBNUndaSkt0a1NxVXlyZUFBSUs4X2JlZ3BpRUh5bG9wTkRvOUoxZ2h1R2dMR1RQTVFWeWUwbjByc2dIRWRsbEpNZDZsNTBtcy16?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claudeで初の紫外線全天図を作成 空の3分の1はAIが推算 - BigGo ファイナンス</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5sdXo2dzJTclJReUVhSV80R2dkWkgzLW1QbGZCcUd1M3FHS1ptdzBpTWg4Nk05Y1doTFlIOU9HYURuZWNkRFRGWE1CYjFpcTdqbWNnZ3NzLUFIZw?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">チャットAI「Claude」への“不必要な虐待行為”が禁止に。利用ポリシーの改定が発表 - 電ファミニコゲーマー</span>
+            <span class="src">電ファミニコゲーマー</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1tSHdscFV4WGdBSnl6R1pNYlFWVjJUU05nV01rbFc2SE4zYld5ZE1QZG5tLUlGNlVRM0N1MFFTVURjQ2dtNUFldVdPamxockdMSno4Yk5BeEhhSzI2bk1yMmU1Q25ubnBzSkE?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">富士ソフト、Anthropicと「Claude in Amazon Bedrock, powered by Anthropic」の再販契約を締結 - PR TIMES</span>
+            <span class="src">PR TIMES</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPMWFPRHFIc3dIVUtMdWp2elhidjZBRGEwUFJZUjVMN0h3ODRFM1pkRTB5QWJiWVdmOE5zNDlfaFI3RWZvdmdyVE1PMmRfb3hqRE1oM0pKeHR6MjhBMUctT3VYV0ZfNVotWHRHalNoX2V5MFR3N3U4Y0otM3FWVWlEZTduY3lDc2tpUXBWbUczenZCQ0VkZk9RWDlqaw?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claude Dashboards と Motion を発表、Claude Docs をベータ版から解除 - Unite.AI</span>
+            <span class="src">Unite.AI</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9FaVJJclFSZWpDbF9XLUh3d2hmRzI1LS1aV1NnY21mLW1GSlNSNEE0Y2VTR1F1d3lZVWoxbmRoSGdpWlpYcXNEN3FfSnYwcVNkRmxUREpSMHFDR2hqbVNNZG5KaXY1dHRJS2YtdllzbUQwU0I0?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、AIモデルへの虐待禁止を利用ポリシーに明文化…来月施行 - BigGo ファイナンス</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9HWUswSld1LUJIRUxRdlJVZVRkaV9ZYjJaT2dydHc4Qlp4eVFaajJQX1hDVjQzZzI0MTJvbmZDcGp2VENycXBGZlhTWXVuYUF2RTkyU1dodFhpbXdrU2k3US1vUHVxN1p4QjhxNW9MeVZSVGwtVXhoXzlQX2YtYXc?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Googleリリース祭り！『Gemini Agent』発表、Claudeが使えるように 対話型ゲーム生成AIとAI識別ツールも公開【AIニュース3選】 - Yahoo!ニュース</span>
+            <span class="src">Yahoo!ニュース</span>
+          </a>
+        </li>
+        </ul>
+      </section>
+  </main>
+
+  <footer>
+    <span>自動生成 · GitHub Actions</span>
+    <a href="archive/">過去ログ</a>
+  </footer>
+</div>
+</body>
+</html>
