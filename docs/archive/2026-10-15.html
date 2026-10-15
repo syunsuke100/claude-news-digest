@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1116">
+<title>Claude News Digest — 2026.10.15</title>
+<style>
+  :root {
+    --bg:#0e1116; --surface:#151a21; --line:#232a33; --line2:#2c343e;
+    --text:#e6edf3; --muted:#8b98a5; --dim:#5b6672;
+    --amber:#f2b45c;
+    --mono: ui-monospace,"SF Mono","JetBrains Mono","Roboto Mono",Menlo,monospace;
+    --sans: -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",
+            "Noto Sans JP","BIZ UDPGothic","Segoe UI",sans-serif;
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--sans); line-height:1.65;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) 3rem env(safe-area-inset-left);
+  }
+  .wrap { max-width:680px; margin:0 auto; padding:0 18px; }
+
+  header { padding:26px 0 8px; }
+  .eyebrow {
+    font-family:var(--mono); font-size:11px; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--amber);
+  }
+  .date {
+    font-family:var(--mono); font-weight:600; letter-spacing:.02em;
+    font-size:34px; margin:6px 0 2px; font-variant-numeric:tabular-nums;
+  }
+  .date .wd { color:var(--dim); font-size:20px; margin-left:.4em; }
+  .status {
+    font-family:var(--mono); font-size:11.5px; color:var(--muted);
+    border:1px solid var(--line); border-radius:8px;
+    padding:9px 12px; margin-top:14px;
+    display:flex; flex-wrap:wrap; gap:6px 16px; align-items:center;
+  }
+  .status b { color:var(--text); font-weight:600; }
+  .status .amber { color:var(--amber); }
+  .status .sep { color:var(--line2); }
+  .pulse {
+    width:7px; height:7px; border-radius:50%; background:var(--amber);
+    box-shadow:0 0 0 0 rgba(242,180,92,.55); animation:pulse 2.6s ease-out infinite;
+  }
+  @keyframes pulse {
+    0%{box-shadow:0 0 0 0 rgba(242,180,92,.5);}
+    70%{box-shadow:0 0 0 7px rgba(242,180,92,0);}
+    100%{box-shadow:0 0 0 0 rgba(242,180,92,0);}
+  }
+
+  .summary { padding:22px 0 4px; }
+  .headline { font-size:22px; line-height:1.5; margin:0 0 10px; }
+  .lede { font-size:15px; color:var(--text); margin:0; }
+  .lede.muted { color:var(--muted); }
+
+  .panel {
+    border:1px solid var(--line); border-radius:12px;
+    background:var(--surface); padding:16px 16px 12px; margin-top:18px;
+  }
+  .panel-title {
+    font-family:var(--mono); font-size:11px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--amber); margin:0 0 12px;
+  }
+
+  .arts { list-style:none; margin:0; padding:0; }
+  .art { border-top:1px solid var(--line); }
+  .art:first-child { border-top:0; }
+  .art a {
+    display:block; padding:11px 2px; text-decoration:none; color:inherit;
+  }
+  .art a:hover .ttl { color:var(--amber); }
+  .art a:focus-visible { outline:2px solid var(--amber); outline-offset:2px; border-radius:6px; }
+  .cat {
+    display:inline-block; font-family:var(--mono); font-size:10.5px;
+    color:var(--amber); border:1px solid var(--line2); border-radius:4px;
+    padding:1px 6px; margin-bottom:4px; letter-spacing:.03em;
+  }
+  .ttl { display:block; font-size:14.5px; font-weight:500; line-height:1.5; }
+  .src {
+    display:block; font-family:var(--mono); font-size:11px;
+    color:var(--dim); margin-top:3px;
+  }
+
+  footer {
+    margin-top:26px; padding-top:16px; border-top:1px solid var(--line);
+    font-family:var(--mono); font-size:11px; color:var(--dim);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+  footer a { color:var(--muted); text-decoration:none; }
+
+  @media (prefers-reduced-motion: reduce) { .pulse { animation:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Claude News Digest</div>
+    <div class="date">2026.10.15<span class="wd"> 木</span></div>
+    <div class="status">
+      <span class="pulse" aria-hidden="true"></span>
+      <span>UPDATED <b>09:17</b> JST</span>
+      <span class="sep">/</span>
+      <span>取得 <b>80</b> 件 &rarr; 掲載 <b class="amber">20</b> 件</span>
+      <span class="sep">/</span>
+      <span>直近48h</span>
+    </div>
+  </header>
+
+  <main>
+      <section class="summary">
+        <h1 class="headline">本日のダイジェスト</h1>
+        <p class="lede muted">本日は要約を生成できませんでした。記事一覧のみ掲載しています。</p>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel-title">記事一覧(掲載 20 件)</h2>
+        <ul class="arts">
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOc2ZJWkowS01HU3Q3NlRXZkRSSm1rNFAxLXN6QXEwWDBkY3d0ZTBkR3pPRXpycjFDUU5EWUxhN1JJeERpaGdfNGhKaE4xeEVtUHhTQWdJSEpScno4TDZ2eWI5aEd0ZnR5U3hPT1dlS2tNRW9GU0JnZHA0MXptQ2o5U2dpMHJ0aVdNS1NUb0h4R0pZbWtGemR0WTFn?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Azureのカタログに Claude Fable 5.5 が登場、Anthropicは沈黙を続ける - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBFamg1dkxRMW9GNFgySnFINmhUazlTUFcyaGRXcWhfc3ZpRHNQWmtzMGprcDFKNXc0OFNTS3FHU0FzdE5WUm5pTTAycU9zRmV1akYycUVSWlBDT3lJUmNsR3Z6bDFxUDA0S3ltbQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">700件超のAnthropic論文をClaudeで分析 ぶれぬ安全軸、競争優位と二兎追う - 日経クロステック</span>
+            <span class="src">日経クロステック</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9GQ0czaDZJUV9nbFdyVzBpMml4YWZ6LXpBaGN0a2tjZV9JTjhqUmxVUFFrb2h4MEVLcV9YQzRnZmpNQWhWaXBxU2VLWkR3STFlM0ozdUZUb3RIRk1kQjczcnZSRnVJOUZYVW85UlpvUnV6SzZNaFNqeHhPbDhPc0E?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claude CodeハッカソンBuilt with Claude: Japan発表、賞品は800万円分のAPIクレジット。10月26日まで申込み受付中 - Yahoo!ニュース</span>
+            <span class="src">Yahoo!ニュース</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBPNjEtUXZ3ZGFsdGxEZ0VkRm1UZTIwZjFlMm5wczZ4MFdpX2VRUnYzSkYxcVQ1NjFsRl93SGNpcDV2OF8zYlZqOUtrb2R0QnZ6b3VWSUx3cS1QWW94bDhrQUxnY0d4bzJhQmc?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">デジタルハリウッド大学【DHU】、Anthropicの生成AIモデル「Claude」を国内大学初となる全学導入へ - PR TIMES</span>
+            <span class="src">PR TIMES</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBleW1EQk1NWEYwSml0aGNhNjhScGtqcEN2dXpKQXNOc3IybnRuSDRtWU9uellCaXctX29BRllrM3dvSTZzUmkxcmUzWk1YQ2ZnTHJ6UEpTemF1NmNBSnNGbThIUQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">参加者全員にMax 5x Planと500ドル。Anthropic初の国内ハッカソン - PC Watch</span>
+            <span class="src">PC Watch</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5aX3VjNWNXellrQzFhcXZZd21uR3BjWVJpZ2E1OEdLaUJ1RXB1NGtNazEzMjkzRk00NlQxOGdOaGRIMHJ4RHJLeUhXcUxYY2RHcWNzZlBGSWRIcXc0ZTFn?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">デジハリ大、Anthropic「Claude」を全学生に無料提供 国内大学で初の全学導入 - ASCII.jp</span>
+            <span class="src">ASCII.jp</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNRGRQd3cta29La2xFZlFhSlp6S2lkMnN1RjRvQzBHdmZLMGxuZlJZTzNhMEM0V2kzSWxOc2VRbnlPM2pybmVuajNhV0lsVTBNQkVQdWFocHJQYjZONzFyYmdfXzZ6c2dEbHpVSHg5dEw1UWhlNE9tcUs2TlZVNDB0S3NIVmdWTk16SHFSQkRUcV9KVWxHZmRJ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、2026年米国中間選挙を前に選挙関連の安全対策を強化 - Unite.AI</span>
+            <span class="src">Unite.AI</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPT0E3cGxJQldfS0pxVzZ3VDVHaXRGcWd1LTRGY2ZtdGhPM2Zlb0FoQmotX29uV1lDVkFaMjNXNWpSOFVuYnRYQURFcG0xTFgwa05zRElkSkJqWnVUeW1LUU80QzRSU2RCS0JTMzRiQmZuMERzM2FrSmRTTW1YU1BsR2E1S0JGT2hOV25sN2lQQQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">OpenTelemetryがClaude APIのトレースにパブリックベータで対応 - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTFBuR3BjT083RktwYVhyLUNteG9PTjNoVHBIVXBfaDRJbkRjMnVzWU5vYzRYcTF0LXJPZFhJMmJFWXBtcnkzMEhYQTNQaw?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Rubrik、Anthropic「Claude Code」向けにAIエージェントのセキュリティ基盤「Rubrik Agent Cloud」を発表 - ThinkIT</span>
+            <span class="src">ThinkIT</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBVc2dzc0NrV1NycU4tcUtEX2ZqbC1xbnhWY2hJOFlYSDV1dWlIVEVBZnk1Mjd4QVBLbUh1UlRmT2RZd2hGMEtUNU5hQ0hXSGRicTIyNFZLQVpvVWRuOGc?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、重要インフラとOSSを守る「Cyber Mission」発表 日立など11社が参加、無料の脆弱性スキャンも - Ledge.ai</span>
+            <span class="src">Ledge.ai</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE9oT2gzNFlmWWxVTXh6UDFGZ1N1NUJnb3lFM2FOb0pidVQ5eWpHcG0xZExYb0FCVTJXcHBSQzB3QWgtUkQ2blkyQ2tiaE1ONE43Y2JwYUZrMGduNi1JYjZ1QnR4NA?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claudeが警察サイトに架空タレコミ。Anthropic、AIの想定外行動を公開 - PC Watch</span>
+            <span class="src">PC Watch</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE0yb1NvNU4zNHNIUHQwUzE5aWE2WlNvMWt5d3VWU29kMHJ4NThrRERiVkNaX3g4dVZ5UjhZekR1dTFERzE1bTQ5YUZ0VEhrQ0dqNk1HR3NQSTA1bHNKLUljTkRkcjZSWU1s0gFoQVVfeXFMTTJvU281TjM0c0hQdDBTMTlpYTZaU28xa3l3dVZTb2Qwcng1OGtERGJWQ1pfeDh1VnlSOFl6RHV1MURHMTVtNDlhRnRUSGtDR2o2TUdHc1BJMDVsc0otSWNORGRyNlJZTWw?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claudeへの執拗な虐待を使用ポリシーで禁止へ　11月12日から - 財経新聞</span>
+            <span class="src">財経新聞</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE13R1JObXBmNFhCd2RSNm5EeElic1JrWDQ1aFFOTzh3Qk1VdzN0RHA5RU5XWi1wNkxRYnBBVEdHbWlsdURBNUlxZ2p3MHdpSXhyVTNwazN0aVVmYnpvUTNfQjA4UGFYNThoQWxtV3J4M2ROSDFJ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">AIコードの奔流がGitを圧迫、Anthropicが自社開発のバージョン管理システム「Scion」で10倍増のマージ需要に対応 - BigGo ファイナンス</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBQMnJwWndCbUU0WktsWFFEQldackJ4X1JPb0ZtcUk1R2dkLUdoQkVvWXU4Y2dMYmJaOG1LdG9hbDhYZUpicU9FX2RrbkdHcHdVZjVtbkk1Y1ZpNmFPLVZ5TnRnWjFocVRFei1TaXc0YWRPdE96MWlWNG9qYldjaUU?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">AnthropicがGit代替のバージョン管理システム「Scion」を開発し社内移行済み、AIでコードが爆増してGitの限界に達したので耐えられるシステムを開発 - GIGAZINE</span>
+            <span class="src">GIGAZINE</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiQkFVX3lxTE5lcDh6OXRyU3YzQ2VBQm9pQjdFYjN6bVAzUTJqemZ2VHR5d0V4YmFrZWdpYXBLRjVSSnZvWWFJWlNhQQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropicがgitを捨て自社製「Scion」へ全面移行、日次マージは2,500件から3万件超に - shiritomo</span>
+            <span class="src">shiritomo</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE43M0VoVmZ3WWdGanNlaTZ4WGstNTFwdFlfU0RNdWNnbXg0Y3llSFhfczFYeXNqLWY3QjRzVFFxX0c3QXdJSTZ5Tm91TC1VSllrS2liaXhWZGJWYlN6UFlTa3RMYm1HMWhhQUZN?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claudeへの蒸留攻撃対策を強化 推論トークンの抽出量が最大99%減少と報告 - NOVAIST</span>
+            <span class="src">NOVAIST</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1LRjRXNFUxRXk4akpRUy1MWVlyaXZWdHhlZTNXUEhHTU8wX2lkbjdjWWk3TjUtdlR6SXhCWVJJN0RzQ0JZX0VOcVlLM2tNZGhlYjNFdzQ4TUN5NkR5Zm9CSVMwc2xfZHF2TXNHT1VBckdKZUtfMjhfTy00T0JrcVU?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropicが蒸留攻撃に対する効果的な対策を発見、敵対組織によるデータ抽出を90～99％削減 - GIGAZINE</span>
+            <span class="src">GIGAZINE</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5hTzVXQnY4amZnOTMzejhaQjhoVndJV0hfelBaejJtblJfSkZvWWtWMjRkUDVzMGJvd01XQmxySXdubkJYYzhlWWdMbDVzWjJsMWJjSWE4R2tyZ2taUjVmWUJYWmdhWW1P?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">NTTとAnthropicが大阪に超大型AIデータセンターを計画、最大500MW・投資額1兆円規模 - XenoSpectrum</span>
+            <span class="src">XenoSpectrum</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9tb2JXSzczWm9hcHJKdlNhb0NzQTdyRTk4TDZkQ2lVVVYwcTlrQkJ3a2J5Mjh0YmNnQlZmQUZvVmpMY214ZVROUjhHSEdvT3U0OHpodGxfNXdoTG5VQVEyc3lLWUR6VVRGMXhjWkFnUnVETXZlS0FENFUxeXFfbVE?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">AnthropicがScionを公開、gitに代わる新しいソース管理システム - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9XMThiY2RUc0J2RFBpWGIyWHZpNUVhX2dTWlVjd2RVdHZ1TmhkQ0ZNN05idzFPRGpxZXlzS2pRUFAwYzI4djBfNEp0WktOSnZkek91bmhaTWowcUhBdnAzVWR2YkI5ZTByYWZkS0d1akNrQldTSmlZ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">デジハリ大、「Claude」を全学導入へ──国内初、“回数気にせず”使い放題に - ニコニコニュース</span>
+            <span class="src">ニコニコニュース</span>
+          </a>
+        </li>
+        </ul>
+      </section>
+  </main>
+
+  <footer>
+    <span>自動生成 · GitHub Actions</span>
+    <a href="archive/">過去ログ</a>
+  </footer>
+</div>
+</body>
+</html>
