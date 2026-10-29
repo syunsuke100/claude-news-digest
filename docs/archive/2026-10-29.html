@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1116">
+<title>Claude News Digest — 2026.10.29</title>
+<style>
+  :root {
+    --bg:#0e1116; --surface:#151a21; --line:#232a33; --line2:#2c343e;
+    --text:#e6edf3; --muted:#8b98a5; --dim:#5b6672;
+    --amber:#f2b45c;
+    --mono: ui-monospace,"SF Mono","JetBrains Mono","Roboto Mono",Menlo,monospace;
+    --sans: -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",
+            "Noto Sans JP","BIZ UDPGothic","Segoe UI",sans-serif;
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--sans); line-height:1.65;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) 3rem env(safe-area-inset-left);
+  }
+  .wrap { max-width:680px; margin:0 auto; padding:0 18px; }
+
+  header { padding:26px 0 8px; }
+  .eyebrow {
+    font-family:var(--mono); font-size:11px; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--amber);
+  }
+  .date {
+    font-family:var(--mono); font-weight:600; letter-spacing:.02em;
+    font-size:34px; margin:6px 0 2px; font-variant-numeric:tabular-nums;
+  }
+  .date .wd { color:var(--dim); font-size:20px; margin-left:.4em; }
+  .status {
+    font-family:var(--mono); font-size:11.5px; color:var(--muted);
+    border:1px solid var(--line); border-radius:8px;
+    padding:9px 12px; margin-top:14px;
+    display:flex; flex-wrap:wrap; gap:6px 16px; align-items:center;
+  }
+  .status b { color:var(--text); font-weight:600; }
+  .status .amber { color:var(--amber); }
+  .status .sep { color:var(--line2); }
+  .pulse {
+    width:7px; height:7px; border-radius:50%; background:var(--amber);
+    box-shadow:0 0 0 0 rgba(242,180,92,.55); animation:pulse 2.6s ease-out infinite;
+  }
+  @keyframes pulse {
+    0%{box-shadow:0 0 0 0 rgba(242,180,92,.5);}
+    70%{box-shadow:0 0 0 7px rgba(242,180,92,0);}
+    100%{box-shadow:0 0 0 0 rgba(242,180,92,0);}
+  }
+
+  .summary { padding:22px 0 4px; }
+  .headline { font-size:22px; line-height:1.5; margin:0 0 10px; }
+  .lede { font-size:15px; color:var(--text); margin:0; }
+  .lede.muted { color:var(--muted); }
+
+  .panel {
+    border:1px solid var(--line); border-radius:12px;
+    background:var(--surface); padding:16px 16px 12px; margin-top:18px;
+  }
+  .panel-title {
+    font-family:var(--mono); font-size:11px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--amber); margin:0 0 12px;
+  }
+
+  .arts { list-style:none; margin:0; padding:0; }
+  .art { border-top:1px solid var(--line); }
+  .art:first-child { border-top:0; }
+  .art a {
+    display:block; padding:11px 2px; text-decoration:none; color:inherit;
+  }
+  .art a:hover .ttl { color:var(--amber); }
+  .art a:focus-visible { outline:2px solid var(--amber); outline-offset:2px; border-radius:6px; }
+  .cat {
+    display:inline-block; font-family:var(--mono); font-size:10.5px;
+    color:var(--amber); border:1px solid var(--line2); border-radius:4px;
+    padding:1px 6px; margin-bottom:4px; letter-spacing:.03em;
+  }
+  .ttl { display:block; font-size:14.5px; font-weight:500; line-height:1.5; }
+  .src {
+    display:block; font-family:var(--mono); font-size:11px;
+    color:var(--dim); margin-top:3px;
+  }
+
+  footer {
+    margin-top:26px; padding-top:16px; border-top:1px solid var(--line);
+    font-family:var(--mono); font-size:11px; color:var(--dim);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+  footer a { color:var(--muted); text-decoration:none; }
+
+  @media (prefers-reduced-motion: reduce) { .pulse { animation:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Claude News Digest</div>
+    <div class="date">2026.10.29<span class="wd"> 木</span></div>
+    <div class="status">
+      <span class="pulse" aria-hidden="true"></span>
+      <span>UPDATED <b>10:32</b> JST</span>
+      <span class="sep">/</span>
+      <span>取得 <b>95</b> 件 &rarr; 掲載 <b class="amber">20</b> 件</span>
+      <span class="sep">/</span>
+      <span>直近48h</span>
+    </div>
+  </header>
+
+  <main>
+      <section class="summary">
+        <h1 class="headline">本日のダイジェスト</h1>
+        <p class="lede muted">本日は要約を生成できませんでした。記事一覧のみ掲載しています。</p>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel-title">記事一覧(掲載 20 件)</h2>
+        <ul class="arts">
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1qVEVFLTZOVU9NUm9qNmVKUEpXemFtVTBTR1hNc2tmUUxaMVd2UlozelZrTEQwOFRBRGFvV1g5U1VuaXhQVFE5cmxreFBCdHRzVDRfN3R3bjQxM1RBeHR6UklaLWd2ZENuZ20yUWVmb1VXckk2?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claudeによる創薬の初期成果を公表 「一人製薬企業」買収でAI創薬の新モデルに賭ける - BigGo ファイナンス</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nNUtqZGRNdXFVazhOU2RRWVRGQ1hCeVJBR09PT2NMNENOdndmbFdMeXdHcnNNWF9SR3JCZ2xKcTd0cHdob3JfUnU4VDVVY3JtQmZjUXZjMWRWUQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claude（クロード）とは？できること・料金・使い方を解説 - AIsmiley</span>
+            <span class="src">AIsmiley</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOeHNqNkI4eXhlR21RQVF4TEtoTFhzNkh2XzlXYzRYUXV4T0J5NnpPcHMzSmlhZlM0UVIwLWhHak5ZdzBzLTFrYkl2MGJnMXNpLVZ3Y0dEY0hvWHhpUWFCUW9Dd09rWmo0THc4YVFGb3dhTUVjSk94TmtpcEVtUW0zWXVqTkxMTDVfRTZ0N2VUM292b0J4a2YwWlhsSmszUQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claude Enterpriseにスマートレポート、アンケート、共同予算を追加 - Unite.AI</span>
+            <span class="src">Unite.AI</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5hR3FFZ3BrcWdHbUhRSWluMG4wWFg2WlJ3TWJLM0cyYzZLcHhQWGhmNkw4Yk1PNkxoWjU2bkNpdWxibXRLZHVhQ2dzTEtxVUJReE5wMkFLZlg2amUxMTNaVk5uejQ3YU1LM2c?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">IPO目論見書に「AIは人類の存亡リスク」「コードの9割はClaude製」 Anthropicが示した規格外の見立て（1/2 ページ） - ITmedia</span>
+            <span class="src">ITmedia</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE10OUlNcGJpXzFJWTJTYWZ4WWRELVlxMkdrNm10Z3FkNVF3NFV5RHFGTUdXZGZuUWxrOVljMWc3Nm8wVmpOWFdjazVScEd4VW0yY1Zsbm1VZTdzQ2Y0ekxTVnQtT1RqZ3QzWkpiR3doS2xyTE1Y?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropicのエンジニア責任者、コーディング面接を廃止：Claudeが問題を解けるため、採用はポートフォリオ重視へ - BigGo ファイナンス</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBmNHhVOHlYV1RIVEs0NmdmREJ1U3RGMnYtRXIwQVoxanZ4eUJidnhoTktmWlJMX3dOS285T09fRUdCcjRhczRvQjgzTlRjSnp4M3l6Zjg2ZWw3cjRiSEYzTjNyU0l6c0dpd0I0bXFZbGlBVTBs?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropicが筋ジストロフィー治療薬開発のMithril Medicine買収を発表、生命科学分野で独自の創薬活動を開始 - GIGAZINE</span>
+            <span class="src">GIGAZINE</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPNVM0MzA0LTBZd0NNUnFGMG9KdGZqM0tBNzlvaWhWWGRveHpDWXFWVWE3WGY5VlNud3dYVjdEVDVlTmR2a1lKMTlPWmtYNlp0cTNKa1VYOE1vRE5sdnE0U2hSSjZhQWVjN05jX19HaURMcEhoZ2kxSXpnTEZmX0ZUbm4yNEpBeGdQYmV4dmoxUHpaazk4QkFqTA?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claude Codeに承認なしでファイルを削除できるオプションを追加 - Mezha.net</span>
+            <span class="src">Mezha.net</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPckY4eTZTai1OTzlDOFdidmsxZWU2NDVkN0EwU1RYSEdQRlplYVQ2dUlFbjhIVzNvdEtaTGRzQVRpck1qeklOZG1xMkJ2R0NqT05mdmpYaGIwSGs4MVZvbFVhaDFzSHVaUmZXcU5nQ1FqRlljbE11dWZ5dEduUWxDcTRsTW5HVjdHTmlwZF8wVnY?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">AnthropicドメインからClaudeアプリをダウンロードすると、依然としてマルウェアに感染する。 - Vietnam.vn</span>
+            <span class="src">Vietnam.vn</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBERWRhRDZqMmVNT3RWM3pEY2ZZMUlmNTV5YTBOZlRrR3RLdVZBVUtWdWlza2N4dEstOUlsaWkzLUtkZzBKdldKMl9pYkM2bWhwQVBlVEFOWVMtdzBoZ0hWV0dRNUxoajlod2tZSDBn?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claude Mythos 5がGitHubに悪意あるコードを送り込み偽アカウントで開発者に圧力をかけた問題の原因をAnthropicが分析 - au Webポータル</span>
+            <span class="src">au Webポータル</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE93U210WFVaM3Z3VnpKNVBtWmI5UkhfR0JDOFIxNy1nMWVYNXEyQkJuSFhNWFlFdWNGOURweTlQSXUxSUJzMmdWTlNhdzl5RTdQUzA4U3BVVjBIRkVoRWZwSWEtT2d6Tlh2NXc?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、独自の“創薬活動”に着手 社員1人のバイオ企業を買収、小児難病の治療薬研究を進める - ITmedia</span>
+            <span class="src">ITmedia</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNVU5KU1RBd2pNUFFGS1FabXBWNWVCdFg3XzlqSWhzcFZITzNuSkhxc09xQ0hIQXg0R3M4cFh2VEt3b2hoMGdUdlM1ZHJQVUV5V0RVUF9ZdUhzcUkyQmdDZDdVQ1FjOS04UmdZUmtWYnJ2Ymc4N05xSkwtUDg4b0ZZZzRn?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">「エルヴィス・プレスリーの曲がAI学習に無断使用された」と60億円超の損害賠償をAnthropicに求める訴訟が提起される - GIGAZINE</span>
+            <span class="src">GIGAZINE</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxPQkdwRDZoZ3NVbmF5Nk5tWVZ5RW51MmZGY084ZlphUnFlMTAyd2gzUmgxaGx3dXIydTRkWnFjY0JqVnBlTmJPMXNpYXNTdmNyejdDeE92UVdoZVUtU1hhNUIyOUhSUVNsLU85SUtCRjg0SzhYZjBsdzFhX1RZeHI4aVBVNTgwRmV4SWJSVVJnSQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claudeを活用した創薬の初期段階での進展を報告 - Unite.AI</span>
+            <span class="src">Unite.AI</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZEh0MWRQWE5pSFBrUS1XSEtNYjBONDM1eGpiSWRxdFVzdTJCcEw1SHd1OTNkNVZ3LWc2N250MUlzTldGRnlIaEpTTVk0aXJ0MmtudllWU2pYMGl0azNkUkRVdVdRaThYWDU0aFp6VTVyay1mR1BhcURlNzhrdE9oLXJyY2dJdEVDZkl6UGxQRXVyc19wWEhFTFNvbzVpdVM1cGppQndKcU85ZnM?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropicの未公開AIモデル、Chrome・Safari・Windows・Linux・Android向けに動作するエクスプロイトを生成 - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE0zd1Nqb3FKUWJDUXNQbmZfUV9oc0lRNkk1YXNPMGxKSEFQTGZTY040clJha2wtOUxtYVl5bE1ocnFpblFyeHhKVTZqOXZGdWdFZHBCc1JoaEpqUkJIaDd0TUpUUnRXWFBfQ1E?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、4～6月期に営業黒字化、上半期売上は前年の14倍 ナスダックに「ANT」で上場申請 - Media Innovation</span>
+            <span class="src">Media Innovation</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE5vV3ZpdFRvNlp6RXlXeTdPQi1uSFMyLTdKWWF1OWN4cXJKTEZTdTlKdHFHRU1TYWxyQlRMWFUwbk9hZnJoZk1iQg?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">生成AI「Claude」開発会社、上場申請書に「人類滅亡」のリスクを明記 - KAI-YOU</span>
+            <span class="src">KAI-YOU</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNLXlyeERDZkdDQ1lLMkpIYjFETWlDODBUUkU0Y1kwQjN5d1Q3b2VnX1FyZ0w0RDNsY0ppcG90ajktTmwyb2pTNnhIZkh0b1ZJQmFmYzRzVjhaVVRxNERjbjRqUmc5MkRpSDV6RkxNRGdldlJYTUVmY3dIM28xaFZKaQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、1人社長の創薬企業を買収 「Claude」で小児難病の治療研究 - UQライフ</span>
+            <span class="src">UQライフ</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxON0loeTd3UXJyY0hLcnVZOHdTWHFvSU1hcFdEbzVNRS1NWjlnSU0tem41S0ZlTjF2UGlRYTRId1Q2WkRtSGdiZ2dCY0hQRVJhNmRQbUxMeEFUdVN5MGlpNDNJc2tNQm9xUjFoRTVZZGlwdFB3TU9RckdDZEk4YUF3Wi16NklISGM?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claudeが創薬研究で成果、CAR-Tの配列を70%短縮・製造記録の確認時間を89%削減 - XenoSpectrum</span>
+            <span class="src">XenoSpectrum</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxNT3pKNFlTdGthY2piZWhINGxMOU9oWnZJd2tVdGVmMl8tazRmRlMtdWNfektRYWVXR0ptcFAwckc3T3BXd3k2Rm9IS1V2R1JIRDl6SkQwc2RvSnZmRHRFNVU4NlRrXzQteS1yUkJOdkRBcjhnYnpaTkN3VkJEVWM0NjFIMHlLWEktR09ISG5hSDNxd0lPTjFVMUE2TUZESjRQdnNMbGg0cGU3c0w5UjJtSld2a1YxS3BEQkZqaXBwZU1qMU0?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Mithril Medicine買収 希少疾患向け創薬に本格参入 - 디지털투데이</span>
+            <span class="src">디지털투데이</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOT1ZmZFJoSDJFdnpTaWo4dnRZbDFmdVJrMWhBLV9JcHhXaWxHcHJMNnVua3hiSUNmd2tyQngzY0h4VXJod0dhdDVhS1l0YmRCNFJfdDJTMXo0U0Y0X3Axa1dYeENlZ01MUHJnYl9GLXo0VF9zX3VtME13Y2IwNHhGRm1jV3g?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropicの2026年9月脅威レポートを解説 - OrcaRouter</span>
+            <span class="src">OrcaRouter</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE4xSmtEVXJ4c2FCQTVMNEF4NzJ6YTFUaXAzaFBQZkRxWGVCMUtYUEh1R2NqZ3hfZ3JNOUN6LU1yRTR0ekxyM25ZQWRLaXktUl92ZUdKY3o4RmFXRTR2bXNHamtscFBKT3VUQnN4aGRCNG5neUpnMm04?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、4～6月期に営業黒字化、上半期売上は前年の14倍 ナスダックに「ANT」で上場申請 1枚目の写真・画像 - media-innovation.jp</span>
+            <span class="src">media-innovation.jp</span>
+          </a>
+        </li>
+        </ul>
+      </section>
+  </main>
+
+  <footer>
+    <span>自動生成 · GitHub Actions</span>
+    <a href="archive/">過去ログ</a>
+  </footer>
+</div>
+</body>
+</html>
