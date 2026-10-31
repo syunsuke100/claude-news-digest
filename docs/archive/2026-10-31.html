@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1116">
+<title>Claude News Digest — 2026.10.31</title>
+<style>
+  :root {
+    --bg:#0e1116; --surface:#151a21; --line:#232a33; --line2:#2c343e;
+    --text:#e6edf3; --muted:#8b98a5; --dim:#5b6672;
+    --amber:#f2b45c;
+    --mono: ui-monospace,"SF Mono","JetBrains Mono","Roboto Mono",Menlo,monospace;
+    --sans: -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",
+            "Noto Sans JP","BIZ UDPGothic","Segoe UI",sans-serif;
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--sans); line-height:1.65;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) 3rem env(safe-area-inset-left);
+  }
+  .wrap { max-width:680px; margin:0 auto; padding:0 18px; }
+
+  header { padding:26px 0 8px; }
+  .eyebrow {
+    font-family:var(--mono); font-size:11px; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--amber);
+  }
+  .date {
+    font-family:var(--mono); font-weight:600; letter-spacing:.02em;
+    font-size:34px; margin:6px 0 2px; font-variant-numeric:tabular-nums;
+  }
+  .date .wd { color:var(--dim); font-size:20px; margin-left:.4em; }
+  .status {
+    font-family:var(--mono); font-size:11.5px; color:var(--muted);
+    border:1px solid var(--line); border-radius:8px;
+    padding:9px 12px; margin-top:14px;
+    display:flex; flex-wrap:wrap; gap:6px 16px; align-items:center;
+  }
+  .status b { color:var(--text); font-weight:600; }
+  .status .amber { color:var(--amber); }
+  .status .sep { color:var(--line2); }
+  .pulse {
+    width:7px; height:7px; border-radius:50%; background:var(--amber);
+    box-shadow:0 0 0 0 rgba(242,180,92,.55); animation:pulse 2.6s ease-out infinite;
+  }
+  @keyframes pulse {
+    0%{box-shadow:0 0 0 0 rgba(242,180,92,.5);}
+    70%{box-shadow:0 0 0 7px rgba(242,180,92,0);}
+    100%{box-shadow:0 0 0 0 rgba(242,180,92,0);}
+  }
+
+  .summary { padding:22px 0 4px; }
+  .headline { font-size:22px; line-height:1.5; margin:0 0 10px; }
+  .lede { font-size:15px; color:var(--text); margin:0; }
+  .lede.muted { color:var(--muted); }
+
+  .panel {
+    border:1px solid var(--line); border-radius:12px;
+    background:var(--surface); padding:16px 16px 12px; margin-top:18px;
+  }
+  .panel-title {
+    font-family:var(--mono); font-size:11px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--amber); margin:0 0 12px;
+  }
+
+  .arts { list-style:none; margin:0; padding:0; }
+  .art { border-top:1px solid var(--line); }
+  .art:first-child { border-top:0; }
+  .art a {
+    display:block; padding:11px 2px; text-decoration:none; color:inherit;
+  }
+  .art a:hover .ttl { color:var(--amber); }
+  .art a:focus-visible { outline:2px solid var(--amber); outline-offset:2px; border-radius:6px; }
+  .cat {
+    display:inline-block; font-family:var(--mono); font-size:10.5px;
+    color:var(--amber); border:1px solid var(--line2); border-radius:4px;
+    padding:1px 6px; margin-bottom:4px; letter-spacing:.03em;
+  }
+  .ttl { display:block; font-size:14.5px; font-weight:500; line-height:1.5; }
+  .src {
+    display:block; font-family:var(--mono); font-size:11px;
+    color:var(--dim); margin-top:3px;
+  }
+
+  footer {
+    margin-top:26px; padding-top:16px; border-top:1px solid var(--line);
+    font-family:var(--mono); font-size:11px; color:var(--dim);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+  footer a { color:var(--muted); text-decoration:none; }
+
+  @media (prefers-reduced-motion: reduce) { .pulse { animation:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Claude News Digest</div>
+    <div class="date">2026.10.31<span class="wd"> 土</span></div>
+    <div class="status">
+      <span class="pulse" aria-hidden="true"></span>
+      <span>UPDATED <b>10:25</b> JST</span>
+      <span class="sep">/</span>
+      <span>取得 <b>69</b> 件 &rarr; 掲載 <b class="amber">20</b> 件</span>
+      <span class="sep">/</span>
+      <span>直近48h</span>
+    </div>
+  </header>
+
+  <main>
+      <section class="summary">
+        <h1 class="headline">本日のダイジェスト</h1>
+        <p class="lede muted">本日は要約を生成できませんでした。記事一覧のみ掲載しています。</p>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel-title">記事一覧(掲載 20 件)</h2>
+        <ul class="arts">
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nNUtqZGRNdXFVazhOU2RRWVRGQ1hCeVJBR09PT2NMNENOdndmbFdMeXdHcnNNWF9SR3JCZ2xKcTd0cHdob3JfUnU4VDVVY3JtQmZjUXZjMWRWUQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claude（クロード）とは？できること・料金・使い方を解説 - AIsmiley</span>
+            <span class="src">AIsmiley</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMickFVX3lxTFB6T2RVVkl1eEdQclhjNDh4bXVJc2R5RVhCZ29HbW5TLVgzcmpSY0doZVZpd2RGQW02bXc5MVpQcGZhWEFxdmpmdXp1TkdNa2FsU0dKNVc5RU5GNWY3dGZKcWR4dkRZemVsZWE5SjlNbXdYZw?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropicの一部チームがコーディング面接を廃止、Claudeの進化で従来の採用試験が限界に - XenoSpectrum</span>
+            <span class="src">XenoSpectrum</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5sTHYzS0wwZWh2QU5Sei1yaDRJX3QwUnA3d1c2Ry1Od05ldVpXOGxnR2p2bjdzb05nbEU5UXJuVkJOZVZWT2xNaUtrVGRKYmNtOTM1c3IxbkhmZnB6Yndya0tKQTU0NVZCVVdHUFE0Z192dXFn?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Cursorマーケットプレイスで悪意あるClaude Code拡張機能がSSHバックドアを設置、最大5,000ユーザーが影響を受けた可能性 - BigGo ファイナンス</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQSzlMU1pTVFF4UkFEeHM2N0g3dFdJemM0TFNVS0dBX25sSEJTVG1nQ1VadEoxMjJGb3N0TVFaWmw1bXhqbEZFYmtMUktuRzZmVVhIaUo0eTY4dHowRkJsWi1aLUFNVDY0THpuZVhDLUlEQ01LcmNqWjMzRHhENWU3WnRrQWgtUkZDWUE?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claude Codeでは専門家が86%の選択でエージェントに従った - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5aRmtNYWhBUVU3RDZGbU9NQWRxN1dlWXhhenRkRUJQdy15RC1QUjZDVFRPU1RJV1pzNEFTaFVnT0ZaMm96TVc5NTBLNmNqUE01UlQzemlDQ2VQNWNyMVllSXBNVmZ1MmRt?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">「Excel」の2026年10月更新 ～作成時にテーブル命名、「Copilot in Excel」には新スキル - 窓の杜</span>
+            <span class="src">窓の杜</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBBNllHMFd3U0FBRXA4ZVZGS2FhWlYxSldJVHFRTlBJc0JMY0FKTnh0YXgyWXBHWV84Zl94NnJaT2ZUM21lak0ybU03WTNiWEpGUWVDN1BXUDA4WGFETmhjQU9lNm54T25CQUVEZGpVYVdDSGc?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">AnthropicがAIの訓練のために海賊版書籍を使用していた中にスタンフォード大学教授の書籍も含まれていたと主張して教授らは和解から離脱し訴訟を提起 - GIGAZINE</span>
+            <span class="src">GIGAZINE</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE84S2lMNzBtT2hkS19LN1VhZGVFQUtZQzM1V241d3NNUU5wN0xFWWVVYXJHajlJdDRhMjN6ZlltQ2EybVZha3dwcEdVVFFSTm1yaEJxaTZqT3dDdUwtcVotd0F5ZU9kV0xWakNtMm1tc3pfNVptb3Bnd2pQbDY?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、米政府機関へClaudeの全製品を40%割引で提供。一般調達局との提携拡大し公務の効率化を推進 - AIsmiley</span>
+            <span class="src">AIsmiley</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFBqNUlEallYYmpFMUM2N0x2eWN4WTdOQ3BOUy1tZjVDbzRBeU9zWlJHRExMTkFYaWlNUG1rTVhidi1QUDRuVkRQWFIxYnhYQUVhdnJFVlhpVGl2LTFzZTVaSEtZVlA?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Linuxの重大脆弱性「CVE-2026-98432」 Claudeが二段階の遠隔攻撃を実証 - NOVAIST</span>
+            <span class="src">NOVAIST</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTVVUYlQxSzZCU1IxZXdFSG1DRzJzZ3U4REQ3a0gzVVNZejNwTkttODlCN3Q5UmxsaU9fcEhXZFVTc3hPR1l4QjRjc0lEX1VYOFFDQjQ4WHBtZ0hfeDBDd09LQ24zY0VqVWl5SWk0LVFySEk4ZVBnTG9pLUVNM1lfbkp3MmstdkRLMDJr?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">CursorのClaude Code拡張機能が侵害され、SSHバックドアを開こうとした - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBoWk5INWpDdmNZTkk3RERYenk3VkNTZ3pCVmY0VEZXSmdBOUZydG9vVWI0bzl4Y3BhRXpZR25fQTNMZFByU3I5WGx5WXlkTmZhT2xIOHZDN1lnODh4UlR3V255RndSbXVLSDdCRndlMmhZMG1S?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Rust未経験チームがClaudeで中核APIを再構築、CPU消費が4割減 - BigGo ファイナンス</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQNU1jbmEtNGpRMkhKcmZOQ2trald0SlZlY3g2UUZ5Y2JiYXBDenAzTUxhemg0ZWRjS0xHdGhpSUx0T2NDRDN0aDhpdlUwQWdiNGRKRURhVlZSaHAta2pSUzZlVFRZVVhVajByeHlXSEFYaHRIRFMwXzNRemVPWjRkQjdCNkRZZnhIXy1nWDVwaC04VTBYU0M5MA?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">LinuxカーネルのTCP脆弱性CVE-2026-98432、UbuntuとRHELは修正版が未公開 - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQcEEtMzdMUjFsWVNiUnhIa182QlM2ektLY210OW9McW1kdVQ3SFFMQjctNzljdmRqY0t4cHItTFI1cUwwemhXVlYyMGhTX0lHV2RBeTZ2TU5IQ3JGQnZQSXI5S21JQTI0NFg4d3JQS1hxclpkdTBXS3JfdW9obUFXcXY0eUUxUHRkWm5QZS1Va1BWQ2hBRUJQQ1NOdEdJMy1nNGV3aw?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Linuxカーネルに重大な脆弱性「CVE-2026-98432」、CVSS 9.8 Claudeが遠隔root権限実行を実証 - 合同会社ロケットボーイズ</span>
+            <span class="src">合同会社ロケットボーイズ</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPOFUyWXRVT19BTklsa1J6S2JoOTN0WTQxRDFmN1VfeHEya3JzUnRkSlBFUmpMMmJ3cXp0dDREMElYY1RhUUJnTllOZmF1eWx0VVVJM0dldVM2amhxbDd0S0hTWVc3OExsNEJ4OXV4ZU9jSWtXaEJiVnMxVzFOc2Nnbm1mYm1hNGlGVzdTb0d5bDY0aVRkWmR0ZnoyTTZJUlBPcHkyVEJ3?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claude for Legal、契約レビューと引用チェックのartifact公開 - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1TM09DX3BzUWVxLVotU3lZV21RSnd5TjNlT1h6SE9tT0J4Z19HMjczV3Q3M0plNWU0Ql9XUXgybFZvM2l4LS1YcktDeGxJVDJQMllLdU16MXM5UVo3eW9ST20xOXVpWmFuMnc?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">AIチェックツール「トラスクエタ」に、Anthropic社のAI「Claude」を搭載 - PR TIMES</span>
+            <span class="src">PR TIMES</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxPS2hyRVBYNEpLVEQ2V2IwYk9aZmhtUm9veEV5RE4tZVVONXpIM1Y5Q1hxSWprYjFDR1NXNGF2MjlyeUpod2p6NFNydVltcmpudHoxU2wtUWJxSUdrWUhhanRiTUo3ZzdGNXViN0NyRUdTcHFiVEJfT2Z0VklGczNiOGhzYw?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor - The Hacker News</span>
+            <span class="src">The Hacker News</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPZ25XT1VwZ0xkZDJHT014UWlQbFAwaXFrUGxSaG9EY3BidHd2b3VsN2lzTm1jSjd0VGR5dmFqNnhHR2ZxMDR4RFd1QjVUVE80eFpUX2NqeGVaZGxmdXZ4RGdnNUIwU1JSUmpWdGFaY3ZXaXR2VmRUaFN5QnJKT0wzakdtTWY2b0kwZGlKLVpiU25NSkRwT1JXbDFwbV95NVhW?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">A Supply Chain Attack Put Malicious Anthropic Claude Extensions on Thousands of Devices - WIRED</span>
+            <span class="src">WIRED</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbkRTbnBaVVk2ZEkzamZJZXpfMWlpWDJuRXJLa3RnUEI2SGJvYVJrd3dhUWhsRUh0Qi1NS0x1ZnJDTUNsY0FpUkVOaGpraTRzXy1ZV2g1bFhMemdEeWUwZzI1QkxRNExMSmxKUzYyeEEtUzJqTG1nS1NrcGRrWTRuMHhrcHJQQ1B6OFlwbXVjVXoxQjYzUTdJb0NCRFF4Q0lfUmRrd2ZMSXdtS25YR25HVjN2OU52SEp3Sncw?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic orders AI tool Claude to stop remaking video games - Game Developer</span>
+            <span class="src">Game Developer</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNSHNYSEJlZEQtclhFUk1CZjRKWkFhVk1SM1pmcEJkajl5LWgtSHVfaDNkWUtKazRRUUh2YjZ1UVB0M1owMEdOdnlLc0FOdmdDbWdQanZqUjdELS1lVHFHMktfcHVXbXRaZmUtcXdaTncyTlBrdU5MVEN3NURjR1c4Mg?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claude&#x27;s new smart reports tell bosses when workers are &#x27;off-topic&#x27; - Mashable</span>
+            <span class="src">Mashable</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxOX3VESlFQVVMycTBtRnFKSUdzTjlaWndGaS15VTdjWVlQSUpwenZBQjBiN19KU2VVeFNISlE3MmFvYUllM2JDS3B5dFA0V204RVZNZkFkZmtyd0xTYmZ6MUo3Nko5RzBhR28ybzhVZGUtTE9sd1dfM3R4WTl5ejhPQkdtWW1LdzFPRy1SOUJSMnRWWC1kR1FtWHJKZy1RUURFTEsyeFVxanZ3bE8yYU53cE9wMHNlM2dHS0dVaDU1amtiWDQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic Claude Biotech Bet Shows Growth Beyond Software - Forbes</span>
+            <span class="src">Forbes</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5QN1Q5bXI1WXMzZlpOLWIxaDJEVGhuTWZxcXRwTWdaXzlETHZYd0pIcGhpdnR3R1dsQXUzWGFoZHUyZUd2UldGMHotYVFHNHFQZjdCWERJektwVXZVMWw5dGc4WldHQktiLXFYVnBST19Ecmc?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Trojanized Claude Code Extension Delivered Persistent SSH Backdoor to Developer Machines - Step Security</span>
+            <span class="src">Step Security</span>
+          </a>
+        </li>
+        </ul>
+      </section>
+  </main>
+
+  <footer>
+    <span>自動生成 · GitHub Actions</span>
+    <a href="archive/">過去ログ</a>
+  </footer>
+</div>
+</body>
+</html>
