@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1116">
+<title>Claude News Digest — 2026.11.18</title>
+<style>
+  :root {
+    --bg:#0e1116; --surface:#151a21; --line:#232a33; --line2:#2c343e;
+    --text:#e6edf3; --muted:#8b98a5; --dim:#5b6672;
+    --amber:#f2b45c;
+    --mono: ui-monospace,"SF Mono","JetBrains Mono","Roboto Mono",Menlo,monospace;
+    --sans: -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",
+            "Noto Sans JP","BIZ UDPGothic","Segoe UI",sans-serif;
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--sans); line-height:1.65;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) 3rem env(safe-area-inset-left);
+  }
+  .wrap { max-width:680px; margin:0 auto; padding:0 18px; }
+
+  header { padding:26px 0 8px; }
+  .eyebrow {
+    font-family:var(--mono); font-size:11px; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--amber);
+  }
+  .date {
+    font-family:var(--mono); font-weight:600; letter-spacing:.02em;
+    font-size:34px; margin:6px 0 2px; font-variant-numeric:tabular-nums;
+  }
+  .date .wd { color:var(--dim); font-size:20px; margin-left:.4em; }
+  .status {
+    font-family:var(--mono); font-size:11.5px; color:var(--muted);
+    border:1px solid var(--line); border-radius:8px;
+    padding:9px 12px; margin-top:14px;
+    display:flex; flex-wrap:wrap; gap:6px 16px; align-items:center;
+  }
+  .status b { color:var(--text); font-weight:600; }
+  .status .amber { color:var(--amber); }
+  .status .sep { color:var(--line2); }
+  .pulse {
+    width:7px; height:7px; border-radius:50%; background:var(--amber);
+    box-shadow:0 0 0 0 rgba(242,180,92,.55); animation:pulse 2.6s ease-out infinite;
+  }
+  @keyframes pulse {
+    0%{box-shadow:0 0 0 0 rgba(242,180,92,.5);}
+    70%{box-shadow:0 0 0 7px rgba(242,180,92,0);}
+    100%{box-shadow:0 0 0 0 rgba(242,180,92,0);}
+  }
+
+  .summary { padding:22px 0 4px; }
+  .headline { font-size:22px; line-height:1.5; margin:0 0 10px; }
+  .lede { font-size:15px; color:var(--text); margin:0; }
+  .lede.muted { color:var(--muted); }
+
+  .panel {
+    border:1px solid var(--line); border-radius:12px;
+    background:var(--surface); padding:16px 16px 12px; margin-top:18px;
+  }
+  .panel-title {
+    font-family:var(--mono); font-size:11px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--amber); margin:0 0 12px;
+  }
+
+  .arts { list-style:none; margin:0; padding:0; }
+  .art { border-top:1px solid var(--line); }
+  .art:first-child { border-top:0; }
+  .art a {
+    display:block; padding:11px 2px; text-decoration:none; color:inherit;
+  }
+  .art a:hover .ttl { color:var(--amber); }
+  .art a:focus-visible { outline:2px solid var(--amber); outline-offset:2px; border-radius:6px; }
+  .cat {
+    display:inline-block; font-family:var(--mono); font-size:10.5px;
+    color:var(--amber); border:1px solid var(--line2); border-radius:4px;
+    padding:1px 6px; margin-bottom:4px; letter-spacing:.03em;
+  }
+  .ttl { display:block; font-size:14.5px; font-weight:500; line-height:1.5; }
+  .src {
+    display:block; font-family:var(--mono); font-size:11px;
+    color:var(--dim); margin-top:3px;
+  }
+
+  footer {
+    margin-top:26px; padding-top:16px; border-top:1px solid var(--line);
+    font-family:var(--mono); font-size:11px; color:var(--dim);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+  footer a { color:var(--muted); text-decoration:none; }
+
+  @media (prefers-reduced-motion: reduce) { .pulse { animation:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Claude News Digest</div>
+    <div class="date">2026.11.18<span class="wd"> 水</span></div>
+    <div class="status">
+      <span class="pulse" aria-hidden="true"></span>
+      <span>UPDATED <b>12:18</b> JST</span>
+      <span class="sep">/</span>
+      <span>取得 <b>90</b> 件 &rarr; 掲載 <b class="amber">20</b> 件</span>
+      <span class="sep">/</span>
+      <span>直近48h</span>
+    </div>
+  </header>
+
+  <main>
+      <section class="summary">
+        <h1 class="headline">本日のダイジェスト</h1>
+        <p class="lede muted">本日は要約を生成できませんでした。記事一覧のみ掲載しています。</p>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel-title">記事一覧(掲載 20 件)</h2>
+        <ul class="arts">
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNbmRHMDgySlZhcHpEOENjaTN0U2xXOW95U2w2OVFLX2FfU3VRU1FSYkZKTHJqendxenJIWUdFZl90cF94dWZ3aHM5cmNKOG1ycUc1a3lSdHRib21TWl9UQVBPd1Y1VjdMZkpsbFhrYTFQS3gxX0w3anVrTzZsN1dHS3JjcUZtSDVzZld5RE9vYVd2Ul9hdGptT2xTWUI0bU4tTlpQX3l3VkZJZmFGTzBId25JVHJuUQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">本日提供開始: Microsoft Copilot で Anthropic Claude Fable 5.2 が利用可能に - Windows Blog</span>
+            <span class="src">Windows Blog</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1ra3Y0UUxTek9aNzduSWpxSklCVkdqMVJrYTQ5cUNxYVRFdFEzVDV6emFZaTZqQVZSc09CbWd6LUNIU2NaQWhId05XZDlBb2pMektuTEhldXhyc19MUkVKcHoxNE14eWc3NzFEcnI5RF8?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">BlackLineの製品がAnthropicのClaudeマーケットプレイスに登録 - Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース</span>
+            <span class="src">Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMickFVX3lxTE1sSFdLcVphZ01wUTlGTXhmU3l6dlpQbmstajd6d2tCMFdYbWFFVWxSY2dKRDIycy1uUkxSTHRadlBwbTNhT2paSWF3cHVFX210dFotSkVHSXYyUEtEZlluXzNqQlhBdmkyV3ZxeU5fNWFodw?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、IPO前夜に「SaaS殺し」へ舵？ Claudeに表計算を内蔵した、真の狙い（1/2 ページ） - ITmedia</span>
+            <span class="src">ITmedia</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYlNob2tjdk9XZHZqZ1VaN0VKNXVWMjVsTDZGaDduQ2FEdWpiWFExWUJFQlB3TV9UZ1NXaHlKbXlWemFwaHp2YWhOU1ZndDFkRURUc2ZXbTR5SWJ2LWdHNzMxVVhUREYtOXcxS0Vma3l0eWFXUnNaN2lNWDN6NTNMRk5ScEtzTHlBSFJB?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claude APIアプリ向けのリンク請求ベータ版を開始 - Unite.AI</span>
+            <span class="src">Unite.AI</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMickFVX3lxTE5RU0NzT3RBWXh0X1NaM0NOM293UUYtc3hGcXppUjZZcDluLWxIZXpRZVZjM0N2bUpZWkhFa3hHV0d3emNiYXM4NnQxQ25EdjQ5VkJ1Z1o2WmRvdzVmSkYxdnNLNWVFWGVZVV9aYnhUSWwyUQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claude 4モデルの選び方を解説 迷ったら「Opus 5.5」、大量処理は「Haiku 5.5」 - Ledge.ai</span>
+            <span class="src">Ledge.ai</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBZTldHdWtXUGNnQjRxMHk5UGpRSFh0VVBlX1NFcUdzNG5WcGNBSW5tcHpoNy0zYUJpdzBXMENqZ2JJbjNjWFA5T1o5cmlpdUZTSVZFUk5RNnFMOHRWVC1OeE1UbnlMbzIwNFNvVVQtN1VxUmxp?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic「Claude、AMD GPUへの移行を1年→3日に」…NVIDIAのCUDAの堀が揺らぐ - BigGo ファイナンス</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdXN5Tk1qbERrN2dNV3ZLRVV6Z2d0WHU2enRJRFRER3BMakcyVWNvNzdxVHhmT1VUUUVNazRmaF94ckc1RmZINGRTSDhfd1I2YXFBaWFpMnE3YWx4QUp0Mm1KNWxTT1AzTjV2YldQdUJFRGdmRTk0VkhMZUFqNXlId1NOQThPTk55cE5V?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">AnthropicがMythosでClaudeをAMD GPUに3日で移植したと発表 - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE85eGwxZVg5N2dVZFR1bzJPTXd5clpxYVo1UEZjdkZYaTZfV1lEZ1VleURMdmVTYU53WktWQ1phVUVnZEd2SU14dVgxQ0RSU2NBN2ltYl9ULW5wZDFIZHNydE1FYy1zRlRHWjlCOWtGSlpldVNk?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claudeにホワイトボード・スプレッドシート・データ機能を追加…オフィス生産性ツール市場を狙い撃ち - BigGo ファイナンス</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBOOWc2ZXpwYmExejdzNFl3MDlmOGw1eVQxRjVGcHRySmNEVlV4U3o5bGhhMzhjRDJkQ0tabUtpdUowUWxEM1ZrN3Q1SUxCZG1qTnRRV3QxYkhheVRXajZiMEtRV3JLTVhnUjduYkVjR00?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claudeを使い続けて大丈夫か？ IPOで見えるAnthropicの財務と新機能：大幅アップデートの新モデル - TechTargetジャパン</span>
+            <span class="src">TechTargetジャパン</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5oWUZwTy1oR1NnbHYtV3JtNG81NTJGeWlyejM1U0laSXpSb3k4eExaLTdMSkRNTW1Kb21peW9NelNlbXRNd3RxQmRSNEdrbERldVQtVVk0NkJXQ2JEUUxrVFc3UVlCcGdDb2c?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">「Claude Startups」にAIリスキルが採択 AIツールギャラリー新サイトの開発作業の約8割をClaude Codeと共同で実施 - PR TIMES</span>
+            <span class="src">PR TIMES</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOZUNWSC1Qd1BxUGF0eldNNExubUVqbTNLUDRHY291aTlhMTNWNjBEWVZvdXUtNXFYRHdjVDg1QmpOSG1kam9jVzNyVW5MM25CNmxoalJuenZDOU9tVldnb1FyVmpvVk9BSXI5UGYzcVFMcm9ENVRTWFBtelpfN3hDajQ4QXdEVXkyalF6SEZZdGkycmJGUEhOZkZvNWVvV1E?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropicによると、Claude Mythos PreviewはAMD MI355X GPU上で、あるモデルを約3日で稼働させた - Mezha.net</span>
+            <span class="src">Mezha.net</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5CSjBsVXFpS0x0OENDajRtYjRESFdLeHFnY3pZaktBSFh0Zmx1NnVtN082QjgyUjBjVFhWWXppSWREZHpBY3NWbE90eTUxYzVFc2gySXZ5OGtrLVRQZkxoS2RVMy1xN19MRndjRWpOTHFaTlNQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Metaの「Muse」を入れた人はClaudeをむしろ長く使う それでもAnthropicが警戒すべき理由 - ITmedia</span>
+            <span class="src">ITmedia</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBPbVF6SGk1MUZsLVpFTkdMNXNRVG9rcXNfOGcxV0psZ2NNSUhhMjFCaVpHSVE3d0k5V3lLYkphcFFtUG1VSUNLUjNLTUhOYnNKTFl5TVVya0U?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">IG証券、上場初日よりAnthropic（ANT）株式CFDの取引を開始予定 - オリコンニュース</span>
+            <span class="src">オリコンニュース</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQQXdubmp4aEx0Sm14Y3RmdWVHbDVrbzhXUmx6QkcwRVY4V1R1RXA1bzF6U3VXcjVseWhJb1ppWk5IZ0dyd0U0S0lhWXFGNE9jOGNPd0FrQ3hnVzJKdDBFZGNyODQ0cGlqUFRDY0xBUEZDZVF4ZDNETEI4dHZodnpvRWVEcXZkcnhraEZzbW1xeHpMWkNHY1FuVGZGUnAwVXhHWjRKVTlEdVpMTVI3Qll2TGVSWXc3VC1rMllVR3JGbVpOVHVyLWRyQ0pnSXU?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、AIの自己改良の閾値到達を判断 安全規則を発動 - Martin Cid Magazine</span>
+            <span class="src">Martin Cid Magazine</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxOZ2dzM25GUXMweFFJRll4d2toU3UxYWtHTS1DSGtqLXQzMHdaM0NuNlpTdmMzQWU0LXZlVUFFOXlKaWNUdVB2UlZUMXZQLTZBbWpkd0xXMG9rSmp5MXZXRThVTndFUXhsdGdJRkhkakY2TVItUWdWS2tlOGRDOTN5Q05zYWx3blk?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Mythos 5.2、個人にも提供開始、有料プランと身分証明書が必要 - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5hN2pFSU1pcXFfaU9lZHlna3NGNUdYRVZGUHl0OVNaNTFCdElTaXQyaV9wb2ZYRkZmczBua3RhaG8xWWZvY3dDRzBQQUwtMGxvbGF0UjQ4Y2lSRE82azdBenpLWjhvS0tnd0o2aDln?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claude Codeに「カスタムテーマ」がきた。カラフルで動きまくり、楽しそう！ - Gizmodo</span>
+            <span class="src">Gizmodo</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQeXlrX2MzQU9hakFSTmRJM0RrYTNCYkZBQmNHc3loc3BFdjlrQUNXR2k2aWFwN3dKc1VFNGJ1YUFfc3FLMU1RSzJsc0t3dTNHd2JTZl9uMnYyQ3lEOU1sTHBNNzRiUloyRE1WaEFmMXlCa3VEY3B2dVNNa3o0YlBvX0JXRjFfY25SR1pHc2ZLREFrZzkwZ1lfTXFibzhDZ3hCQXhEUjFZdENGTmVp?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic IPO: how can I buy shares, and is it worth it? - The Guardian</span>
+            <span class="src">The Guardian</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMickFVX3lxTE10OUpMSF9LOVFSVk9ZbGszRUFCTm9sYjhnUk9IaWZWb1FieW4zUG1saWd5UlJBUHB2TXRvczNqVlExYkd4WEcxRGlwdC1PbHUtaEFfRno2WlE0TnBVTWFtMnBwTmRCc3ZGS19adHRmUTBCZw?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic&#x27;s IPO set for blastoff this week in key test for AI boom - CBS News</span>
+            <span class="src">CBS News</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOUmszbVZ1SUxDZmp2RFdENXZ2TlozWDgyeXpSQU11ZlVoRGRsdXRzNFk5eHoxRFRYUFdpMG9UZE9MYm9sZmlBRmdmRzcwTEdLOWFhdWJScVgxOEhSSHJ6cEtrY09sMFVOdWttTnloNGdzM1dESEt6eWptN3hna1loVUFPbzNiRXUxZ1lRRVFES19zSkUyQ0lkWFRJcng5N290STZCRVBCcUd0eVdzUDhReDlR?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic Said to Guide IPO Price to Top of Range or Above - Bloomberg.com</span>
+            <span class="src">Bloomberg.com</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNWnBIQWE0a2JUME11UzNpeTZUa0lqOEg0aFNMT05BV29YVldtdzNISHM1OWtrdHZsYkRHc2xTZmFjekh4dTltVEpROVRsZlFjcW8xR21QZ2t2aXpNcHNpb2QyU0lkdU5aZXV6bFVkdXNES09NRnh2MHJTeER1R2hud3o1UWdkSmR5ZnZoQmpRQjhvQk5nTlZtVnBMS1FGUDA?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic’s New IPO Filing Shows Amazon, Google Will Own Over A Quarter Of The Claude Maker - Yahoo Finance</span>
+            <span class="src">Yahoo Finance</span>
+          </a>
+        </li>
+        </ul>
+      </section>
+  </main>
+
+  <footer>
+    <span>自動生成 · GitHub Actions</span>
+    <a href="archive/">過去ログ</a>
+  </footer>
+</div>
+</body>
+</html>
