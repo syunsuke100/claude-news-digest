@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1116">
+<title>Claude News Digest — 2026.11.19</title>
+<style>
+  :root {
+    --bg:#0e1116; --surface:#151a21; --line:#232a33; --line2:#2c343e;
+    --text:#e6edf3; --muted:#8b98a5; --dim:#5b6672;
+    --amber:#f2b45c;
+    --mono: ui-monospace,"SF Mono","JetBrains Mono","Roboto Mono",Menlo,monospace;
+    --sans: -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",
+            "Noto Sans JP","BIZ UDPGothic","Segoe UI",sans-serif;
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--sans); line-height:1.65;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) 3rem env(safe-area-inset-left);
+  }
+  .wrap { max-width:680px; margin:0 auto; padding:0 18px; }
+
+  header { padding:26px 0 8px; }
+  .eyebrow {
+    font-family:var(--mono); font-size:11px; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--amber);
+  }
+  .date {
+    font-family:var(--mono); font-weight:600; letter-spacing:.02em;
+    font-size:34px; margin:6px 0 2px; font-variant-numeric:tabular-nums;
+  }
+  .date .wd { color:var(--dim); font-size:20px; margin-left:.4em; }
+  .status {
+    font-family:var(--mono); font-size:11.5px; color:var(--muted);
+    border:1px solid var(--line); border-radius:8px;
+    padding:9px 12px; margin-top:14px;
+    display:flex; flex-wrap:wrap; gap:6px 16px; align-items:center;
+  }
+  .status b { color:var(--text); font-weight:600; }
+  .status .amber { color:var(--amber); }
+  .status .sep { color:var(--line2); }
+  .pulse {
+    width:7px; height:7px; border-radius:50%; background:var(--amber);
+    box-shadow:0 0 0 0 rgba(242,180,92,.55); animation:pulse 2.6s ease-out infinite;
+  }
+  @keyframes pulse {
+    0%{box-shadow:0 0 0 0 rgba(242,180,92,.5);}
+    70%{box-shadow:0 0 0 7px rgba(242,180,92,0);}
+    100%{box-shadow:0 0 0 0 rgba(242,180,92,0);}
+  }
+
+  .summary { padding:22px 0 4px; }
+  .headline { font-size:22px; line-height:1.5; margin:0 0 10px; }
+  .lede { font-size:15px; color:var(--text); margin:0; }
+  .lede.muted { color:var(--muted); }
+
+  .panel {
+    border:1px solid var(--line); border-radius:12px;
+    background:var(--surface); padding:16px 16px 12px; margin-top:18px;
+  }
+  .panel-title {
+    font-family:var(--mono); font-size:11px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--amber); margin:0 0 12px;
+  }
+
+  .arts { list-style:none; margin:0; padding:0; }
+  .art { border-top:1px solid var(--line); }
+  .art:first-child { border-top:0; }
+  .art a {
+    display:block; padding:11px 2px; text-decoration:none; color:inherit;
+  }
+  .art a:hover .ttl { color:var(--amber); }
+  .art a:focus-visible { outline:2px solid var(--amber); outline-offset:2px; border-radius:6px; }
+  .cat {
+    display:inline-block; font-family:var(--mono); font-size:10.5px;
+    color:var(--amber); border:1px solid var(--line2); border-radius:4px;
+    padding:1px 6px; margin-bottom:4px; letter-spacing:.03em;
+  }
+  .ttl { display:block; font-size:14.5px; font-weight:500; line-height:1.5; }
+  .src {
+    display:block; font-family:var(--mono); font-size:11px;
+    color:var(--dim); margin-top:3px;
+  }
+
+  footer {
+    margin-top:26px; padding-top:16px; border-top:1px solid var(--line);
+    font-family:var(--mono); font-size:11px; color:var(--dim);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+  footer a { color:var(--muted); text-decoration:none; }
+
+  @media (prefers-reduced-motion: reduce) { .pulse { animation:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Claude News Digest</div>
+    <div class="date">2026.11.19<span class="wd"> 木</span></div>
+    <div class="status">
+      <span class="pulse" aria-hidden="true"></span>
+      <span>UPDATED <b>11:56</b> JST</span>
+      <span class="sep">/</span>
+      <span>取得 <b>106</b> 件 &rarr; 掲載 <b class="amber">20</b> 件</span>
+      <span class="sep">/</span>
+      <span>直近48h</span>
+    </div>
+  </header>
+
+  <main>
+      <section class="summary">
+        <h1 class="headline">本日のダイジェスト</h1>
+        <p class="lede muted">本日は要約を生成できませんでした。記事一覧のみ掲載しています。</p>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel-title">記事一覧(掲載 20 件)</h2>
+        <ul class="arts">
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPMFRZMnE2M0VpbThkbmlpMnEwTC1maGE5cW9IVWdTLUlvQkpnV05keVlTLW1ETVFwNl94d1ptMkdCNU5wNDNrLXhVd01lTVVUZ3dmbHBPNjZ4UWkyLU5DQ0pnU0JOMXVlMXJWQnozVGRMVWk1eFRQbWRTZVpQVlg1RA?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">AnthropicのAI「Claude Mythos Preview」が見つけた約3万8000件の脆弱性候補の修正はどこまで進んだのか？ - GIGAZINE</span>
+            <span class="src">GIGAZINE</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTFByYTlWZWk3bm10QzVaVExWVW8tc0FVU0lRYmpneHpJNVEzMFBOd2U0Mm1JcWJxX0JhY21MQXYwS1JfLXRVb08wTA?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">コスプレイヤー伊織もえ、Anthropic社の新規公開株購入を申し込み「Claudeをたくさん使ってるので」 - KAI-YOU</span>
+            <span class="src">KAI-YOU</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5MWjdOUldIbW9OMHBqWWRHR2ZhdFU5TGtUNnd4TzNXcmVjNEM2NmtxdEZOZmN1cnIwUWJlT0FvWFdlWU04cVd0X2dVV3VyMG5UWndQbmVWU1c1c3lET0N1bWg1aEFnREc5UmFyT1FNN1dQZ2E2QTBhd282ZUo2SU0?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">アンソロピックIPOで判明した約143兆円の契約、Claude利用企業が抱える料金と供給のリスク - Yahoo!ニュース</span>
+            <span class="src">Yahoo!ニュース</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNbmRHMDgySlZhcHpEOENjaTN0U2xXOW95U2w2OVFLX2FfU3VRU1FSYkZKTHJqendxenJIWUdFZl90cF94dWZ3aHM5cmNKOG1ycUc1a3lSdHRib21TWl9UQVBPd1Y1VjdMZkpsbFhrYTFQS3gxX0w3anVrTzZsN1dHS3JjcUZtSDVzZld5RE9vYVd2Ul9hdGptT2xTWUI0bU4tTlpQX3l3VkZJZmFGTzBId25JVHJuUQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">本日提供開始: Microsoft Copilot で Anthropic Claude Fable 5.2 が利用可能に - Windows Blog</span>
+            <span class="src">Windows Blog</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5wRkxLajU0WVJ0V09ZMjh0VlVCSzR3LTFHekJrMnhudFNZakpPNnJ6cDBBOTJNX0lFVGZWQ01ERXVPYmlvTFBka0RGZ0xobzFMaG1nZGQ4ZU1WeVFzalVKekZXUTBsa3VHTGtBWWNB?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">AnthropicがIPO価格を1株83ドルに決定、9億8000万株を売り出し NASDAQに「ANT」で上場へ - au Webポータル</span>
+            <span class="src">au Webポータル</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBscU52dVFlZzIzM3htVzBpRXYzYkYwcUFGb1h4VkNWVXE2OHR2QUR1MEk4NkJwT242TUlNOE1mVGJIOEU0SE5ubWc5MEVMOXpHcUhwVDQ0Nk1CakpZMHZMd216S3dsV3p2OERJeXhn?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">伊織もえさん、AnthropicのIPOに投資「Claudeユーザーなので」 - PC Watch</span>
+            <span class="src">PC Watch</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMickFVX3lxTE5RU0NzT3RBWXh0X1NaM0NOM293UUYtc3hGcXppUjZZcDluLWxIZXpRZVZjM0N2bUpZWkhFa3hHV0d3emNiYXM4NnQxQ25EdjQ5VkJ1Z1o2WmRvdzVmSkYxdnNLNWVFWGVZVV9aYnhUSWwyUQ?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claude 4モデルの選び方を解説 迷ったら「Opus 5.5」、大量処理は「Haiku 5.5」 - Ledge.ai</span>
+            <span class="src">Ledge.ai</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMickFVX3lxTE1sSFdLcVphZ01wUTlGTXhmU3l6dlpQbmstajd6d2tCMFdYbWFFVWxSY2dKRDIycy1uUkxSTHRadlBwbTNhT2paSWF3cHVFX210dFotSkVHSXYyUEtEZlluXzNqQlhBdmkyV3ZxeU5fNWFodw?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、IPO前夜に「SaaS殺し」へ舵？ Claudeに表計算を内蔵した、真の狙い（1/2 ページ） - ITmedia</span>
+            <span class="src">ITmedia</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPLVNwR1o0b1F3QW4xX2dUbl9RbXpCOWNRNV9Gb1FPQy1DRGZBaTlKd1lKLWNhcGg5WHRZUzlveUJiekNQMUstVDllVnV1b2s2VG5sQXBRc3NSdERDVDFHSTFvRWQ3OUdHOUIwUkZzbThncm12aHpLN19GOGZnNmFFRnpmbUVMaDBoX3VFcXVHdVZ2UG45?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、1,040億ドルの赤字でナスダックへ、ほぼ全額が会計上の損失 - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxQMDR3R3BxX25hMXhPVUJFU1NJZkVvQ0p4SnFDblNXTHNkc1AwRUdXcWhKSDlLZ0R5eGFkMi13S3pJc1dlX05IVExFT1Z1UVp0QXM3WXdIMHlvSHFaaFlDMnJ5T2pFdEduOHBrNGNJckNJMEFuandUUjgxSS1NRV9LVVJHREI4cDVmSHE4blNfZDRDY0xCMHZlZGphcU1pQnNqaXB1UVNkbU13M1hxdE1zUWxMVmhUaFBHalNxeDVnNjNrMzJiekE?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Claude Opus 5.5、データセンター調査を3時間未満で完了 外注換算16時間を大幅短縮 - 디지털투데이</span>
+            <span class="src">디지털투데이</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYlNob2tjdk9XZHZqZ1VaN0VKNXVWMjVsTDZGaDduQ2FEdWpiWFExWUJFQlB3TV9UZ1NXaHlKbXlWemFwaHp2YWhOU1ZndDFkRURUc2ZXbTR5SWJ2LWdHNzMxVVhUREYtOXcxS0Vma3l0eWFXUnNaN2lNWDN6NTNMRk5ScEtzTHlBSFJB?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">Anthropic、Claude APIアプリ向けのリンク請求ベータ版を開始 - Unite.AI</span>
+            <span class="src">Unite.AI</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBpWUpLNkpISDNWX25rQWNrV1FXb2RwZ2ZpQV9LOVhUU0JTNkpNODJrR3hnQXRFczdNSXRpQ3BwTEp2eUFTcHNNTmNTa0dYY2Y3TlNVTnBCZkxMcEhMNFBoUmN0MEFMOTlNZG90TUhOb2pBX1lk?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">OpenAIの旗艦モデル「Astra」を2割値下げ、Anthropic上場直前のGPT-6.2デュアルモデル投入 - BigGo ファイナンス</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdXN5Tk1qbERrN2dNV3ZLRVV6Z2d0WHU2enRJRFRER3BMakcyVWNvNzdxVHhmT1VUUUVNazRmaF94ckc1RmZINGRTSDhfd1I2YXFBaWFpMnE3YWx4QUp0Mm1KNWxTT1AzTjV2YldQdUJFRGdmRTk0VkhMZUFqNXlId1NOQThPTk55cE5V?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">AnthropicがMythosでClaudeをAMD GPUに3日で移植したと発表 - Pasquale Pillitteri</span>
+            <span class="src">Pasquale Pillitteri</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1uUlR4QnNoVlBncjI5SVd5N0s0Z1llOV9wWlE1Z3R3UllBd2xjazFrQ1A0QWVRQW8zR0NXT2wwcHhIRUpZSlFrRUh3dGRUMGZ2RmduTWgyN2hITDlNSGhzVmNRRGd1OFlqRUE?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">ヘッドウォータース、Anthropic「Claude Security」の活用を本格化 - PR TIMES</span>
+            <span class="src">PR TIMES</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE0xd0JoSl9UVHBLYjVBdktwVGR5emFOTGtKU3lyLXYzaVpxME1nd29URVI0SEZrMVZZMzZXQmVxX3Fiellka3lVR2FoMUhpU2hQaUJvX1Nnank2anZzcXNsMVRtMS13VzFFSU5rZ09LUkstRy1w?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">ヘッドウォータースがAnthropic「Claude Security」を活用しソフトウェアの安全性を強化 - ニュースメディアVOIX</span>
+            <span class="src">ニュースメディアVOIX</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5oWUZwTy1oR1NnbHYtV3JtNG81NTJGeWlyejM1U0laSXpSb3k4eExaLTdMSkRNTW1Kb21peW9NelNlbXRNd3RxQmRSNEdrbERldVQtVVk0NkJXQ2JEUUxrVFc3UVlCcGdDb2c?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">「Claude Startups」にAIリスキルが採択 AIツールギャラリー新サイトの開発作業の約8割をClaude Codeと共同で実施 - PR TIMES</span>
+            <span class="src">PR TIMES</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1hMjhKcnJWNnhsMHo4MHd0cHhScU8tbHlkcWh4M1U1b3lKNFBscFVPMGhMVFVBZ2FzLXQ1QnU0djlHT3ZGNTA4SnQtcThFM0psd2RmTlBJT2RFT1ZfVGc?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">AnthropicのAI「Claude Mythos Preview」が見つけた約3万8000件の脆弱性候補の修正はどこまで進んだのか？ - ライブドアニュース</span>
+            <span class="src">ライブドアニュース</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiR0FVX3lxTE5IeTN4RmdJRUpxODk4VzRrdXF0YnhQUy12eTY5RkRxTV9jUmxxUzBXNk1LT0NjcWptczkzMWw4TUNHN0x6Rmp3?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">テレポートが米AnthropicのAIモデルClaude Mythos 5.1承認取得 - Dellows News</span>
+            <span class="src">Dellows News</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE1wQ1MxZWZkYm5OMDRKMWp5VDNfbmwtR3k0YU9LM19aa1ZXX0tVdFdTSzFfeldHblY3dzdWdFByMkFURTZmaVRyTTh4SklpdkNNQThRVlVVY3JGVU9Ickd5WDFFek9YMnJGdGNJVFlPX3BfSXM?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">【やじうまPC Watch】伊織もえさん、AnthropicのIPOに投資「Claudeユーザーなので」 - Excite エキサイト</span>
+            <span class="src">Excite エキサイト</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFAwTUZmeUJjMlFGQ0ZrVjBGZzJuanVmcWJicWtuVlRYLWh6UG1FYnl4YmxKeS1nOEFwM3pQbWJ1cnlzMlFwR3dGa2ZlMWp0S0NWdFozdU1Da2ZxVm1tN1E1em51RkNuc2dhazJGb09mNVJBT3I4?oc=5" target="_blank" rel="noopener">
+            <span class="ttl">コスプレイヤー伊織もえ、Anthropic社の新規公開株購入を申し込み「Claudeをたくさん使ってるので」 - Excite エキサイト</span>
+            <span class="src">Excite エキサイト</span>
+          </a>
+        </li>
+        </ul>
+      </section>
+  </main>
+
+  <footer>
+    <span>自動生成 · GitHub Actions</span>
+    <a href="archive/">過去ログ</a>
+  </footer>
+</div>
+</body>
+</html>
