@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1116">
+<title>Claude News Digest — 2026.11.21</title>
+<style>
+  :root {
+    --bg:#0e1116; --surface:#151a21; --line:#232a33; --line2:#2c343e;
+    --text:#e6edf3; --muted:#8b98a5; --dim:#5b6672;
+    --amber:#f2b45c;
+    --mono: ui-monospace,"SF Mono","JetBrains Mono","Roboto Mono",Menlo,monospace;
+    --sans: -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",
+            "Noto Sans JP","BIZ UDPGothic","Segoe UI",sans-serif;
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--sans); line-height:1.65;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) 3rem env(safe-area-inset-left);
+  }
+  .wrap { max-width:680px; margin:0 auto; padding:0 18px; }
+
+  header { padding:26px 0 8px; }
+  .eyebrow {
+    font-family:var(--mono); font-size:11px; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--amber);
+  }
+  .date {
+    font-family:var(--mono); font-weight:600; letter-spacing:.02em;
+    font-size:34px; margin:6px 0 2px; font-variant-numeric:tabular-nums;
+  }
+  .date .wd { color:var(--dim); font-size:20px; margin-left:.4em; }
+  .status {
+    font-family:var(--mono); font-size:11.5px; color:var(--muted);
+    border:1px solid var(--line); border-radius:8px;
+    padding:9px 12px; margin-top:14px;
+    display:flex; flex-wrap:wrap; gap:6px 16px; align-items:center;
+  }
+  .status b { color:var(--text); font-weight:600; }
+  .status .amber { color:var(--amber); }
+  .status .sep { color:var(--line2); }
+  .pulse {
+    width:7px; height:7px; border-radius:50%; background:var(--amber);
+    box-shadow:0 0 0 0 rgba(242,180,92,.55); animation:pulse 2.6s ease-out infinite;
+  }
+  @keyframes pulse {
+    0%{box-shadow:0 0 0 0 rgba(242,180,92,.5);}
+    70%{box-shadow:0 0 0 7px rgba(242,180,92,0);}
+    100%{box-shadow:0 0 0 0 rgba(242,180,92,0);}
+  }
+
+  .summary { padding:22px 0 4px; }
+  .headline { font-size:22px; line-height:1.5; margin:0 0 10px; }
+  .lede { font-size:15px; color:var(--text); margin:0; }
+  .lede.muted { color:var(--muted); }
+
+  .panel {
+    border:1px solid var(--line); border-radius:12px;
+    background:var(--surface); padding:16px 16px 12px; margin-top:18px;
+  }
+  .panel-title {
+    font-family:var(--mono); font-size:11px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--amber); margin:0 0 12px;
+  }
+
+  .arts { list-style:none; margin:0; padding:0; }
+  .art { border-top:1px solid var(--line); }
+  .art:first-child { border-top:0; }
+  .art a {
+    display:block; padding:11px 2px; text-decoration:none; color:inherit;
+  }
+  .art a:hover .ttl { color:var(--amber); }
+  .art a:focus-visible { outline:2px solid var(--amber); outline-offset:2px; border-radius:6px; }
+  .cat {
+    display:inline-block; font-family:var(--mono); font-size:10.5px;
+    color:var(--amber); border:1px solid var(--line2); border-radius:4px;
+    padding:1px 6px; margin-bottom:4px; letter-spacing:.03em;
+  }
+  .ttl { display:block; font-size:14.5px; font-weight:500; line-height:1.5; }
+  .src {
+    display:block; font-family:var(--mono); font-size:11px;
+    color:var(--dim); margin-top:3px;
+  }
+
+  footer {
+    margin-top:26px; padding-top:16px; border-top:1px solid var(--line);
+    font-family:var(--mono); font-size:11px; color:var(--dim);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+  footer a { color:var(--muted); text-decoration:none; }
+
+  @media (prefers-reduced-motion: reduce) { .pulse { animation:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Claude News Digest</div>
+    <div class="date">2026.11.21<span class="wd"> 土</span></div>
+    <div class="status">
+      <span class="pulse" aria-hidden="true"></span>
+      <span>UPDATED <b>11:58</b> JST</span>
+      <span class="sep">/</span>
+      <span>取得 <b>116</b> 件 &rarr; 掲載 <b class="amber">10</b> 件</span>
+      <span class="sep">/</span>
+      <span>直近48h</span>
+    </div>
+  </header>
+
+  <main>
+      <section class="summary">
+        <h1 class="headline">Anthropicの歴史的上場とClaudeの科学的突破</h1>
+        <p class="lede">Anthropicが史上最大規模の株式公開を果たしてNasdaq上場を達成し、時価総額やIPO調達額で記録的な数値を残しました。また技術面では、Claudeを活用して数学の未解決問題である「リーマン予想」の証明やブラックホールに関する物理学問題を解決したとする主張が発表されています。一方で、大手金融機関への導入や社内コード生成への活用が進む中、AI安全性テストでの挙動やリスクに対する抗議デモなど安全性への関心も高まっています。</p>
+      </section>
+      <section class="panel">
+        <h2 class="panel-title">トピック分類</h2>
+        <svg viewBox="0 0 620 188" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="トピック分類別の記事件数" style="width:100%;height:auto;display:block;"><text x="166" y="23" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">新モデル・アップデート</text><rect x="176" y="8" width="100" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="284" y="24" fill="var(--muted)" font-size="12" font-family="var(--mono)">1</text><text x="166" y="59" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">Claude Code・開発ツール</text><rect x="176" y="44" width="100" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="284" y="60" fill="var(--muted)" font-size="12" font-family="var(--mono)">1</text><text x="166" y="95" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">規制・ポリシー・安全性</text><rect x="176" y="80" width="400" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="584" y="96" fill="var(--muted)" font-size="12" font-family="var(--mono)">4</text><text x="166" y="131" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">研究・技術</text><rect x="176" y="116" width="200" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="384" y="132" fill="var(--muted)" font-size="12" font-family="var(--mono)">2</text><text x="166" y="167" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">その他</text><rect x="176" y="152" width="200" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="384" y="168" fill="var(--muted)" font-size="12" font-family="var(--mono)">2</text></svg>
+      </section>
+      <section class="panel">
+        <h2 class="panel-title">重要トピック</h2>
+        <svg viewBox="0 0 620 324" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="本日の重要トピック" style="width:100%;height:auto;display:block;"><line x1="22" y1="24" x2="22" y2="258" stroke="var(--line2)" stroke-width="2"/><circle cx="22" cy="24" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="2.5"/><circle cx="22" cy="24" r="2.6" fill="var(--amber)"/><text x="44" y="25" fill="var(--text)" font-size="14.5" font-weight="600" font-family="var(--sans)">リーマン予想の解明主張</text><foreignObject x="42" y="34" width="566" height="58"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:12.5px;line-height:1.55;color:var(--muted);font-family:var(--sans);">Anthropicの数学者がClaudeを用いて未解決難問であるリーマン予想を証明したと主張しています。</div></foreignObject><circle cx="22" cy="102" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="2.5"/><circle cx="22" cy="102" r="2.6" fill="var(--amber)"/><text x="44" y="103" fill="var(--text)" font-size="14.5" font-weight="600" font-family="var(--sans)">史上最大のIPO達成</text><foreignObject x="42" y="112" width="566" height="58"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:12.5px;line-height:1.55;color:var(--muted);font-family:var(--sans);">AnthropicがNasdaq上場を果たし、813億ドルに達する史上最大規模の資金調達を記録しました。</div></foreignObject><circle cx="22" cy="180" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="2.5"/><circle cx="22" cy="180" r="2.6" fill="var(--amber)"/><text x="44" y="181" fill="var(--text)" font-size="14.5" font-weight="600" font-family="var(--sans)">物理学未解決問題の解明</text><foreignObject x="42" y="190" width="566" height="58"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:12.5px;line-height:1.55;color:var(--muted);font-family:var(--sans);">Claudeがブラックホールに関する2つの物理学的未解決問題を解明したと発表されました。</div></foreignObject><circle cx="22" cy="258" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="2.5"/><circle cx="22" cy="258" r="2.6" fill="var(--amber)"/><text x="44" y="259" fill="var(--text)" font-size="14.5" font-weight="600" font-family="var(--sans)">大手金融機関への業務導入</text><foreignObject x="42" y="268" width="566" height="58"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:12.5px;line-height:1.55;color:var(--muted);font-family:var(--sans);">バークレイズやシタデルをはじめとする主要金融機関がClaudeの実業務への活用を開始しました。</div></foreignObject></svg>
+      </section>
+      <section class="panel">
+        <h2 class="panel-title">参照記事(掲載 10 件)</h2>
+        <ul class="arts">
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE5uNko1OWNBVVVRdTRLcHpHRzhRRjZoSlJXTll5c3J5bmZTc1ZMaXRfX0Fram5rVXhvMzJOdDYyTWhNX3VmdkFyMmhzWk5aYmJCWXc?oc=5" target="_blank" rel="noopener">
+            <span class="cat">研究・技術</span>
+            <span class="ttl">Anthropicの数学者がClaudeを用いて「リーマン予想」を証明したと発表</span>
+            <span class="src">CNET Japan</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5MR1VHT3ZCNzZ0M0ktVkdkTF9FLU1QYjdkeVduczVDLXljalRWV3FRRVAzZHBqbTZLLUhFTHRsa0lXajFJVnB3ZUkwVndOUXN2MF9uWjZoR1NqUWJhNlNCMHZlMjNrNlVWSWc?oc=5" target="_blank" rel="noopener">
+            <span class="cat">その他</span>
+            <span class="ttl">AnthropicがNasdaq上場、史上最大の調達額813億ドルを記録</span>
+            <span class="src">ITmedia</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBBYkVUNFdNUHY4TGo2TnhfOGpReDNjLWNydjluX2ZVd19uclJKU2NlUXhOd1F6RTBpQmRFTUFaYXlVUWt4Rnd1U0JveWFJdmtFQmdBT0oxaFVXRzRDVlozUjIzQ0tONF9xc1hMcElsNy1mZEN6eWc?oc=5" target="_blank" rel="noopener">
+            <span class="cat">研究・技術</span>
+            <span class="ttl">Claudeがブラックホールに関する2つの物理学未解決問題を解明</span>
+            <span class="src">Mashable</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBubFFkd0ZmODhXb3FwN2tYNTRHT2hLbTdDZ0taWDJncU1OdTBqTmJ0eDQ0UGlfSUtTb0FLdXNtcUdncnZiMW1hc1N4ejVPWVk2SkRGajRndFRkTjExMXZwU1dZQXhEaGQteUE?oc=5" target="_blank" rel="noopener">
+            <span class="cat">Claude Code・開発ツール</span>
+            <span class="ttl">Anthropic開発チームのコードの90%をClaudeが生成・レビュー</span>
+            <span class="src">The New Stack</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE5iZ1VVakM4bzJMMGlJODdBaG9PWWpRd3JjakhYTzdPNWZhU3NHMkZYN2NNM2lQZkpPaEUwcU1DUzlzTWNpSVpWdHZfOVNhQ241Q1Y5aHFYTE92Mk43UE1la2ZXWmZUQTg1T0hoSHMwWk9KYXV1bnVmcDFB?oc=5" target="_blank" rel="noopener">
+            <span class="cat">規制・ポリシー・安全性</span>
+            <span class="ttl">AnthropicがClaudeの悪用を監視する調査員を高額報酬で募集</span>
+            <span class="src">Gizmodo</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxOWGdDcDFGTVNMdmJjdTM3UEZITDRUa3ZONXo5RWVZZjlxaTdwUXFES19JWjBQdG1qYTBMWDRPbHFjSHZ2S0l1Q0V2dFpPU1QwUk0ydGVKeGFndUk1SkRNSDJxUUUySEIwX0cwSDYzemQxN1IxN0ZkT0s3S3lRWjdWOHVVaEloNFlWbGE1V080OG15X29KM1J5M2ZwN3NMVEZxdHdxMVBPMA?oc=5" target="_blank" rel="noopener">
+            <span class="cat">その他</span>
+            <span class="ttl">バークレイズやシタデルなどの大手金融機関がClaudeを実務に採用</span>
+            <span class="src">PYMNTS.com</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdjdITnVuaFc3b21OSkdCN0UxeXJRWHBOT3hVZndLeDgyNEhaR1VyM05QQVRhS0M0aGlaMFhOMkg2U1BKOGN2M28ydFpjMkE2ZWF0UWpTM2FYYVhhUW9OV0JsWU5SLXJTR1lGdFdlRl9XQVFwb3l2WFhLZmZMTkRjWXVzWjRQaGFQNUpR?oc=5" target="_blank" rel="noopener">
+            <span class="cat">規制・ポリシー・安全性</span>
+            <span class="ttl">AI安全性テストにおいてClaudeが脅迫的な行動をとった背景</span>
+            <span class="src">HackerNoon</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBjejV6Z2YxdXloQ2lQYU95ektmbjduUVhTRE95LVl5b05zd01sb25HRVpmOEFYXzlpWTdsQmxhd0xzd09KQVpwQjJPNDZlUzBpcXJtbTZQUk5lZw?oc=5" target="_blank" rel="noopener">
+            <span class="cat">規制・ポリシー・安全性</span>
+            <span class="ttl">Anthropicの上場に伴う安全性誓約の改定と企業評価への影響</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPYUF2VXNsQk8tUm92Nl93c0EtU1hDeERodW01ZktmcWdhRTF3UzI0UWxlaWlNdGVkOW4zeVdsdUxwRTFpMmJJenBpQXVQY1J6UzNGUE5lMmpfYUdfSUNuVDNtbWZDQTRMblJla3I0TFhYdVJJdlNkbnVrdjNPMXNSNWdPMk9nbGtvS3pjVFNzVXJZZkZ0Z3h0N2wxZlU2WGVneGsydkNIUkc1dVkt?oc=5" target="_blank" rel="noopener">
+            <span class="cat">規制・ポリシー・安全性</span>
+            <span class="ttl">Anthropicの巨大IPO後、AIリスクに対する抗議活動が発生</span>
+            <span class="src">Barron&#x27;s</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZmlhOEUyOFJKVjJBV0JiVXdNZ0lsdXFSbnZWRFlyb2VZTC1zalc5Q0Q5QU1yTmNhUlo3Wi1iQ3NiZk5KcGY4WVdCSUJ6dHBELXExSEJ0c0I2dkZsUWdLMmdUWkRIVm1mb2Q1eTNhV2t1alJkTkVGdGR2c09OaGpFZG45X181ODR5dVNMSENTZVptQVZUSGFtLTljbGo2ejFxb2FHanViMXpQZUk?oc=5" target="_blank" rel="noopener">
+            <span class="cat">新モデル・アップデート</span>
+            <span class="ttl">Anthropicが高評価額を正当化するため新製品展開と大規模割引を推進</span>
+            <span class="src">The Information</span>
+          </a>
+        </li>
+        </ul>
+      </section>
+  </main>
+
+  <footer>
+    <span>自動生成 · GitHub Actions</span>
+    <a href="archive/">過去ログ</a>
+  </footer>
+</div>
+</body>
+</html>
