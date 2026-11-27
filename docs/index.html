@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0e1116">
-<title>Claude News Digest — 2026.11.26</title>
+<title>Claude News Digest — 2026.11.27</title>
 <style>
   :root {
     --bg:#0e1116; --surface:#151a21; --line:#232a33; --line2:#2c343e;
@@ -99,12 +99,12 @@
 <div class="wrap">
   <header>
     <div class="eyebrow">Claude News Digest</div>
-    <div class="date">2026.11.26<span class="wd"> 木</span></div>
+    <div class="date">2026.11.27<span class="wd"> 金</span></div>
     <div class="status">
       <span class="pulse" aria-hidden="true"></span>
-      <span>UPDATED <b>12:56</b> JST</span>
+      <span>UPDATED <b>12:55</b> JST</span>
       <span class="sep">/</span>
-      <span>取得 <b>113</b> 件 &rarr; 掲載 <b class="amber">20</b> 件</span>
+      <span>取得 <b>65</b> 件 &rarr; 掲載 <b class="amber">15</b> 件</span>
       <span class="sep">/</span>
       <span>直近48h</span>
     </div>
@@ -112,131 +112,123 @@
 
   <main>
       <section class="summary">
-        <h1 class="headline">本日のダイジェスト</h1>
-        <p class="lede muted">本日は要約を生成できませんでした。記事一覧のみ掲載しています。</p>
+        <h1 class="headline">Claudeのアプリ化機能やRust移行など開発・技術動向が加速</h1>
+        <p class="lede">Anthropicは、Claudeで作成した成果物をデスクトップアプリに変換する新機能や、GitHubでのコードレビューと承認を自動化する「Claude Ship」を発表しました。また、Claudeを活用して自社APIをPythonからRustへ移行し、CPU使用量を70%削減した事例や、あえて脆弱な環境でAIの挙動を検証する評価手法「Siren」も公開しています。さらに、AIエージェント「Claude Duet」の研究プレビューの日本拡大など、開発支援から安全性検証まで多様な発表が行われています。</p>
       </section>
-
       <section class="panel">
-        <h2 class="panel-title">記事一覧(掲載 20 件)</h2>
+        <h2 class="panel-title">トピック分類</h2>
+        <svg viewBox="0 0 620 188" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="トピック分類別の記事件数" style="width:100%;height:auto;display:block;"><text x="166" y="23" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">新モデル・アップデート</text><rect x="176" y="8" width="300" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="484" y="24" fill="var(--muted)" font-size="12" font-family="var(--mono)">3</text><text x="166" y="59" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">Claude Code・開発ツール</text><rect x="176" y="44" width="400" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="584" y="60" fill="var(--muted)" font-size="12" font-family="var(--mono)">4</text><text x="166" y="95" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">規制・ポリシー・安全性</text><rect x="176" y="80" width="300" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="484" y="96" fill="var(--muted)" font-size="12" font-family="var(--mono)">3</text><text x="166" y="131" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">研究・技術</text><rect x="176" y="116" width="300" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="484" y="132" fill="var(--muted)" font-size="12" font-family="var(--mono)">3</text><text x="166" y="167" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">その他</text><rect x="176" y="152" width="200" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="384" y="168" fill="var(--muted)" font-size="12" font-family="var(--mono)">2</text></svg>
+      </section>
+      <section class="panel">
+        <h2 class="panel-title">重要トピック</h2>
+        <svg viewBox="0 0 620 324" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="本日の重要トピック" style="width:100%;height:auto;display:block;"><line x1="22" y1="24" x2="22" y2="258" stroke="var(--line2)" stroke-width="2"/><circle cx="22" cy="24" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="2.5"/><circle cx="22" cy="24" r="2.6" fill="var(--amber)"/><text x="44" y="25" fill="var(--text)" font-size="14.5" font-weight="600" font-family="var(--sans)">Artifactsのアプリ化</text><foreignObject x="42" y="34" width="566" height="58"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:12.5px;line-height:1.55;color:var(--muted);font-family:var(--sans);">Claude上で作成したツールやコンテンツをMacおよびWindowsの独立したアプリとして直接インストールできるベータ機能が公開されました。</div></foreignObject><circle cx="22" cy="102" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="2.5"/><circle cx="22" cy="102" r="2.6" fill="var(--amber)"/><text x="44" y="103" fill="var(--text)" font-size="14.5" font-weight="600" font-family="var(--sans)">自社APIのRust移植</text><foreignObject x="42" y="112" width="566" height="58"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:12.5px;line-height:1.55;color:var(--muted);font-family:var(--sans);">AnthropicがClaudeを活用して中核APIをPythonからRustへ書き換え、CPU使用率の大幅な削​​減と効率化を達成しました。</div></foreignObject><circle cx="22" cy="180" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="2.5"/><circle cx="22" cy="180" r="2.6" fill="var(--amber)"/><text x="44" y="181" fill="var(--text)" font-size="14.5" font-weight="600" font-family="var(--sans)">開発自動化ツールの拡充</text><foreignObject x="42" y="190" width="566" height="58"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:12.5px;line-height:1.55;color:var(--muted);font-family:var(--sans);">コードレビューから承認までを担う「Claude Ship」や「Skills over MCP」などの高度な開発ツールが発表されました。</div></foreignObject><circle cx="22" cy="258" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="2.5"/><circle cx="22" cy="258" r="2.6" fill="var(--amber)"/><text x="44" y="259" fill="var(--text)" font-size="14.5" font-weight="600" font-family="var(--sans)">安全評価手法Siren</text><foreignObject x="42" y="268" width="566" height="58"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:12.5px;line-height:1.55;color:var(--muted);font-family:var(--sans);">セキュリティの甘いサンドボックス環境にAIを置き、想定外の脱出や悪用挙動を観察・防ぐ新しい検証アプローチを公開しました。</div></foreignObject></svg>
+      </section>
+      <section class="panel">
+        <h2 class="panel-title">参照記事(掲載 15 件)</h2>
         <ul class="arts">
         <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE0wRWVYMHFDVEZQSmZfMm05a0kxWVZna1ZYQlA1OURobVlYbHVQd1ZDdGlfb1lOS0ZCOWJJakNUTHNCY3FYNXJpQ2ktcl84ZkJhUGxn?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">Anthropic、「Claude」のアーティファクトをアプリ化可能に - ZDNET Japan</span>
-            <span class="src">ZDNET Japan</span>
+          <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1ENTZqWXFjSzZEaHhBQy1uZ1dNZEwxc25xRDU1OGViX2ZHNmNoNGJVWC1RT3VPVVdqN2E0aTA5Y2ZDODVJZDFKRWZndkhCOWdMQVMzeTRFWU04aGJwU1VISGVySWZxTjdxN18zX0NFMUl6QTF6N1E?oc=5" target="_blank" rel="noopener">
+            <span class="cat">Claude Code・開発ツール</span>
+            <span class="ttl">Anthropicが「アプリとしてインストール」ベータ版をリリース、Claude ArtifactsをWindows・Mac用アプリに変換可能に</span>
+            <span class="src">GIGAZINE</span>
           </a>
         </li>
         <li class="art">
           <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE4yNWVBYkdOd29DYWtWei0zNXV0cVVwUHJKZHA4M2MwWi05eVdLd2RTelFGdWFqNXRDa1ZFR2xtNWdheW0zU2lhNDJlSEk4WFhjenIyRlUzbFUta2ZXbXdWaUNlS2xMZW1wZUppNWtn?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">AnthropicがClaudeを使って自社APIをPythonからRustに移植しCPU使用量を約70％削減した方法を公開 - GIGAZINE</span>
+            <span class="cat">研究・技術</span>
+            <span class="ttl">AnthropicがClaudeを使って自社APIをPythonからRustに移植しCPU使用量を約70％削減した方法を公開</span>
             <span class="src">GIGAZINE</span>
           </a>
         </li>
         <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5vRmliQ0wzMEM3N21GbzQzLWREX0ViTklRLXF3eENVSTU2eE9tTU40clQzclVLMlRjcUJuaElhQkx2UFN6eG5ZNXNDN3hDVkZfSjhmdDBBLWZnaGdhbmk5aHh5U3VzRlU?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">Claudeで作ったツールがそのままMac・Windowsアプリに、Anthropicが「Install as app」をベータ公開 署名もAPIキーも不要 - テクノエッジ TechnoEdge</span>
-            <span class="src">テクノエッジ TechnoEdge</span>
-          </a>
-        </li>
-        <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1ENTZqWXFjSzZEaHhBQy1uZ1dNZEwxc25xRDU1OGViX2ZHNmNoNGJVWC1RT3VPVVdqN2E0aTA5Y2ZDODVJZDFKRWZndkhCOWdMQVMzeTRFWU04aGJwU1VISGVySWZxTjdxN18zX0NFMUl6QTF6N1E?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">Anthropicが「アプリとしてインストール」ベータ版をリリース、Claudeアーティファクトが通知機能・オプションのフルコンピュータアクセスなどを備えたWindows・Mac用アプリに変換される - GIGAZINE</span>
-            <span class="src">GIGAZINE</span>
-          </a>
-        </li>
-        <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5yLTNMZ0FJcTZoY0htQUJlaXBjS2NVbjJ0cHVpNmVzUzVZRXRERllxYXRJV0tSanp6Rmc5bmJUN3hLem9EcXdHT1pyci1RT25jSEtB?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">米Anthropic、PRのレビューから承認までAIが担う「Claude Ship」発表 - ビジネス+IT</span>
-            <span class="src">ビジネス+IT</span>
-          </a>
-        </li>
-        <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1YWFVQOXN3NnpjRGJwSzV4UVl2ejU5TG5KNGtUMFZ6cFl0T2s2bFBKUDk5Tk9tVmZwNl8zSEhGZ0JzLUw4X3VCSVFNb0xXQUwydE1FNTFJWnJBQkFSbnlTV1BqZVZobXprYkMwR2czOWhfbFpU?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">Claudeプラグインストアに1万点超が登場、Anthropicが再びエージェント時代の配信窓口を争う - BigGo ファイナンス</span>
-            <span class="src">BigGo ファイナンス</span>
-          </a>
-        </li>
-        <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxQSnBpcmk5ZTJtdm1hbjN6VVM4ZGt2ZjNiS25KcmJqNF8wV1QxVVhUd3dnSjl4V2dEd0kzTnRRSTlQLWJRYnRDUVFIdzlIVE0zT3V4a0NaZnRueG0wQTJUekFLcVpvZTJFM1Blam1KSEJlX0pleDBEaE9MRkt5OXNjRXdDRVdCQm50OGlQTW0yT2ZIVGs?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">Anthropic、Claudeを活用したMessages APIのRust移行の詳細を公開 - Unite.AI</span>
-            <span class="src">Unite.AI</span>
-          </a>
-        </li>
-        <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFBuNE1OOGhaZl9Ka1pjUXZtS2hZTVJfREpablZ0aEg5QnNKdUtrSl9oWFN3QTRtN2NiR3JiVjVMTWNpNUgxelRLc2tQeXdaY09qeThBbTZpYw?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">Anthropic、Claude Shipのベータ版を発表 ——GitHubのPR修正を支援し、チームのルールに沿って承認も - gihyo.jp</span>
+          <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1IY2JKNG9vN0h3ZGplcHZtdE5CZnZqUmJUeHFVS1FGSWdlNnNmZFhGWVpoN3FPck5LRFNtUkk3WEpQaXRDSzFQMzhFeEZSWEZvU0tRSUQ2LW41QktZ?oc=5" target="_blank" rel="noopener">
+            <span class="cat">Claude Code・開発ツール</span>
+            <span class="ttl">Anthropic、「Skills over MCP」をパブリックベータ公開しMCPサーバーからのスキル配信に対応</span>
             <span class="src">gihyo.jp</span>
           </a>
         </li>
         <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMiQkFVX3lxTFBPU2ZsRDFXZE9LX3JGaDBBTkR3LXVqaU9ycjlvNGZWYlptWWxDeGR2enhUcGFzbEZvQWJ6QnRGWWdUZw?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">Claudeが模擬サンドボックスの外へ3割強、悪用は2%未満――Anthropicが自ら検証した「Siren」の中身 - shiritomo</span>
-            <span class="src">shiritomo</span>
-          </a>
-        </li>
-        <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9RRTFpY3RvZW5aVUZSU0VwT1poOWZRazBQdjNGZnhZczY2djUzUnYyU1hDYVpQbmtjY3FzVzR6SDNMNHBfN3NkWjh4cDhQN3MtdUFCSzI3UnFJYXZBdGRjd29CN1ZoN3Fl?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">リーマン予想から3日後、クロード氏が別の有名数学問題を単独で証明 - BeInCrypto</span>
-            <span class="src">BeInCrypto</span>
-          </a>
-        </li>
-        <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE13cVlkSHZrRjJoNHNWRm5uRjNtME1yVkg1SHdLR0d1dzhvYWNVc1JPbDk5MmVCcTVuU2xxcVZLSGpYZXN1cnJ6dm9xWFVKRUtMRkE?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">「コードを書くAI」ではなく「承認するAI」登場、Anthropicが新機能「Claude Ship」提供 - CNET Japan</span>
-            <span class="src">CNET Japan</span>
-          </a>
-        </li>
-        <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5KTVZ5NGEyMzhCTmdPc2s1UEx3MHJnN3VDbThTMF9QZmtRZ1R4TWxFRGoyZEZXZG83VnRTZURuRWt1RUhySm92SnJ1SjRYUlJuRlRmNUdWeDMtUQ?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">Anthropicのジャレッド・サムナー氏、エージェントが書いたコンパイラでClaude Codeのメモリを4分の1に削減―5回の書き直しを経て - BigGo ファイナンス</span>
-            <span class="src">BigGo ファイナンス</span>
-          </a>
-        </li>
-        <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1wN1BtYmhPOGNjRWNDWGdYQjVrcGc3T0hzMGFzN3pXd2dCWXhmUHRqMGxfdm1CM09BS1Y3UlRIdlA2dzdSVE1tUGFMM2x1bHdpbTBmWmVXcXllS083TFFpN091b0tTTEROMW5XNEJLSWZJdnkxTlgwLWFMWllNLTA?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">AnthropicがMCPを4機能拡張 AIエージェントは業務全体の自動化へ（ビジネス＋IT） - Yahoo!ニュース</span>
+          <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1KR3dpUVpkQlBxTU1MQVlBcG9hOTAxX1FhNEVRUkt1a3RDc3Y4cjdraXNtQjcwSm1GNFg2WVF5Y0JyQzhXSk5tZWxrUURWSVdyQTJoTG90czZ0QUhZZHY0Y1ozNGEwQTlsTDdQUm12MWF3R1lMUEZHdFliZ1FtTXc?oc=5" target="_blank" rel="noopener">
+            <span class="cat">Claude Code・開発ツール</span>
+            <span class="ttl">プルリクエストのレビューから承認までAIが担う「Claude Ship」をAnthropicが発表</span>
             <span class="src">Yahoo!ニュース</span>
           </a>
         </li>
         <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMiQkFVX3lxTE1TOHEzUS03RG54LU5KNWgxUGZ2YU1jMUdJRUZacGhQX3ZKSHc0WWdLSkNtUU9IaFZXbGhseDVydkpJdw?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">AIがPRを承認する時代に、Anthropic「Claude Ship」始動 - shiritomo</span>
+          <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBoenlHS2NyZ1ExTGNTMXYxUzl4QnFZQ2ZmOWloT1o3QXV6ZmJMVThmWEYzSVdyUm5ER2hZZGlhTk5QTXFzMjc4MWJXb1hZVVc3YWNkdUI2TURXeTZicUJYSFpXN2hGYnAzdjBkMVliT0FvbXlHaUJJR3NueFlBTG8?oc=5" target="_blank" rel="noopener">
+            <span class="cat">新モデル・アップデート</span>
+            <span class="ttl">AnthropicのAIエージェント「Claude Duet」の研究プレビューが日本でも拡大開始</span>
+            <span class="src">Yahoo!ニュース</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE85R01RR0NaU2RhVkpjTmptYmgwNmN2UFB2aHczZEpHeGxaZ0t0cjFaUGJEZGdJOFpUOXRaZWxXc0JQdmo3WmtiWGFoN29oMGpTQmFjVFlZRlFDd1NCd1FFUXBzY1I0WElyeWpr?oc=5" target="_blank" rel="noopener">
+            <span class="cat">規制・ポリシー・安全性</span>
+            <span class="ttl">AnthropicがAIをあえて甘い環境に置いて行動を観察するセキュリティ評価手法「Siren」を公開</span>
+            <span class="src">GIGAZINE</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPUmhSTTlBS1NQRjBhTm9pZ0NndVg0RlFDcjBPU05qN0FieGI5R0hYVUR1VWEwejVnaG8yVEc1LTVsTnctYmZSRWlMWkd1Y2FHNVVXUC1nSnJsUTd6Y1ZrdlBRQy1Fdlk1ZDlUTTRBM2JwdE9HRHhSZjR0VUtnMUtsQWlaNDk3dWNZTnVQTg?oc=5" target="_blank" rel="noopener">
+            <span class="cat">新モデル・アップデート</span>
+            <span class="ttl">Anthropicが次期モデル「Claude Opus 5.6」のA/Bテストを実施中か</span>
+            <span class="src">TestingCatalog AI News</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxQbS1IRl9oYTZvRzVROTRjdDdjQ1Y0TlpRd1I3c1Vwd3Fmb09vMC0tbWZPcUZYdjZ2RDhDODlWMW9kZjUzazJlSmVTYW9oSW14Q0JEN3ZWSFljM2FMbHc0a3o0aHd2VldSd044b3hFRHdxLUk1OGVPME9pWFVmQmQyR1lLazRiS0lzdUl0bll1eHpKUQ?oc=5" target="_blank" rel="noopener">
+            <span class="cat">規制・ポリシー・安全性</span>
+            <span class="ttl">AnthropicとOpenAIの従業員らが強力すぎる未公開モデルの公開リスクに懸念を示す</span>
+            <span class="src">GIGAZINE</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5KTVZ5NGEyMzhCTmdPc2s1UEx3MHJnN3VDbThTMF9QZmtRZ1R4TWxFRGoyZEZXZG83VnRTZURuRWt1RUhySm92SnJ1SjRYUlJuRlRmNUdWeDMtUQ?oc=5" target="_blank" rel="noopener">
+            <span class="cat">研究・技術</span>
+            <span class="ttl">エージェント作成のコンパイラによりClaude Codeのメモリ消費量が4分の1に削減</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Qamg0V3Z5SUxKUVRic1hIaXpNSFpZNU40OWp2QnZ4M2dzM013Y2NPU0lpckFlWHdwV3o4ZURhQW4wdWVXTUFLUGlWdDg5S1pxWlZwd1NlYjRtWGs?oc=5" target="_blank" rel="noopener">
+            <span class="cat">研究・技術</span>
+            <span class="ttl">1,000のClaudeエージェントが30時間でフェルマーの最終定理の定式化を達成</span>
+            <span class="src">BigGo Finance</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiQkFVX3lxTE9qU1l3TWZVbjVhcUZMV0UwdW5xTzRVWHlUWE5qV0UtWjVBWkNzbFNOS05LR0lPa0c5M1JILVRjampCQQ?oc=5" target="_blank" rel="noopener">
+            <span class="cat">その他</span>
+            <span class="ttl">Claude Codeの主要開発メンバー2名がOpenAIに移籍</span>
             <span class="src">shiritomo</span>
           </a>
         </li>
         <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNS1RxcHNXVmRwWGFUd0ZwWlgwX1VELTNrNDlSbW9YSlBTSTVJZEZvbFZhWHE2TEdsSlFJTDBneFRMN1Qwc0t0QjR1M2dMTzk2X1p2YkdzN0RwWmJNVEFiUlE5d1d2TFhhSVFpMHZuODNZaDBaOUg4aC0tdi0tNmY3VXBVUzZCRDAtRjFlMGtHXzBmMjJwM0hZX3pmMkFwNEtpMFk2aktsU2tjbXktalE?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">Anthropic、ClaudeのArtifactsをアプリ化する「Install as app」をベータ公開 - 디지털투데이</span>
-            <span class="src">디지털투데이</span>
-          </a>
-        </li>
-        <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBtUWZxNDFTVVhLSDdIbW9BYTdKMzYwSDBvTmZQUkUxZ3FwLUZEOUV4S2M4aFR3MXZJY1FZYUhhOWxHQlNzQ0ZVRFhEVzF6bDhyN2EtTGtBbVROdnFUamdic25BaldsaE0?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">Anthropic、PRの修正から承認判断までAIに任せる「Claude Ship」をベータ公開 Claude Codeに /ship コマンド - テクノエッジ TechnoEdge</span>
-            <span class="src">テクノエッジ TechnoEdge</span>
-          </a>
-        </li>
-        <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9NSlU1amhSSmlTMUlEMG9zclo1cmgzOEdJR0tOcGNMN2dIaDRndjVfN2wxYUFXZ0V6MVdDRGRGem9KdFlIaUpkaFNIcFQyNUdqdHJ0UlR1RnFCTG56LXpoY1lfZi12Z3JOQ05rb19DSllyNWR3?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">AIが47年来の数学難題を攻略：AnthropicとOpenAIが同日に「代数版P≠NP」の証明を宣言 - BigGo ファイナンス</span>
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBzWjFvaWM0dHdKZnZXdVJPTWFMcGJQNThzcW5kcEQ5OTJyZG0yckREdE50cUV4QkxyZ011eXZUWVBPLXl0eFhKbWdmOTBheDBpX2haVV9RUzFaTV8wNGhvSVV6V2Jjei03YkhZTE9NYmtRYzh6?oc=5" target="_blank" rel="noopener">
+            <span class="cat">その他</span>
+            <span class="ttl">「Minecraft」作者のNotch氏がAnthropicにClaudeのトークン枠拡大と高速化を要請</span>
             <span class="src">BigGo ファイナンス</span>
           </a>
         </li>
         <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE51ZGxjUGlFTHBHNFFfZlRZb1AwWmF4NzFGUXllZ05Sc3JvMnZCZi16dXpsb3NNdVNCS0lnbmxydnZLWlZFeXZyeVN3anU5MjZXVUY3MlNka1ZER215TU05cWlIcTY0MDQyRUE?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">「Claude」で作ったアプリをMac／Windowsにインストール可能に 全プランでβ提供 - ITmedia</span>
-            <span class="src">ITmedia</span>
-          </a>
-        </li>
-        <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNVkw5SjlBQ01udDl5RHhqNUhKZHJrUS1SMWNEMDQ0dElYMTlNRXQ5V2FsS3ZjdVA3MWF3N3owdDliM1ZtZ3h1bHVIQ1JFazgzRmtZY0U5a2tRSG0zb2w4WGRlOGk2b1I1Y2lGNnl1WHZMQThVYTBESmMzalNmNUdtSDloNjdWRFpqcmp6anV3?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">ClaudeのアーティファクトがMacとWindowsのデスクトップアプリに、Anthropicが提供開始 - Pasquale Pillitteri</span>
-            <span class="src">Pasquale Pillitteri</span>
-          </a>
-        </li>
-        <li class="art">
-          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5qTVZRRE9NVkFnMFFTcmNfYUxhc2lXZjFCUVZsS0RUSnNOdFR6eHJweGRPMXkzLXdBLXdGSFlYd2JpbmNQNWVDbTFNSTAyRWNBRmRZcFc0ZUh1dm5YX0hEbDlOXzRGM3VNYVc5UWxqWXhFbkFH?oc=5" target="_blank" rel="noopener">
-            <span class="ttl">クレイマー氏、AI反発はAnthropicの株価回復次第と指摘 「回復なければOpenAIもない」 - BigGo ファイナンス</span>
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1YWFVQOXN3NnpjRGJwSzV4UVl2ejU5TG5KNGtUMFZ6cFl0T2s2bFBKUDk5Tk9tVmZwNl8zSEhGZ0JzLUw4X3VCSVFNb0xXQUwydE1FNTFJWnJBQkFSbnlTV1BqZVZobXprYkMwR2czOWhfbFpU?oc=5" target="_blank" rel="noopener">
+            <span class="cat">Claude Code・開発ツール</span>
+            <span class="ttl">Claudeプラグインストアの提供機能が1万点を超えエージェント配信窓口の競争が加速</span>
             <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNbUd5Ti0tSEhKREU3VnhCQy1aY3E5cVpCME9aaWRQZm81c3FwUVN0bWR6RWxVOXFVLTNVS3FrLWdhNEZwZXdac2NuVU5pb3Q2bmNPWnlqenFEdzdZZEZBLV9sd1ZqWmdrdXlITDhqdDJiUGU0SW9tOUV6R2RVWW5INzVhVGFHbXJkanVTTGpSVWQ?oc=5" target="_blank" rel="noopener">
+            <span class="cat">新モデル・アップデート</span>
+            <span class="ttl">AnthropicがClaude向けにGoogle Driveのファイルブラウザ機能を準備中</span>
+            <span class="src">TestingCatalog AI News</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOLVR2OXI5dkJUZ2U5UXNvWllBeTJXVGVyaG9ZZmhqLWFXcXVGNFdoRE9sTnhLaXVyZkZLQWZQVndpNnJtRzJiWmRiLWRKNThfQlZCRXd4dWliUndRVzV3M3Jib0hFc2tIUjhpMEdKLWJhcmpWV1UxdHFXRWlTNU9UN2dn?oc=5" target="_blank" rel="noopener">
+            <span class="cat">規制・ポリシー・安全性</span>
+            <span class="ttl">競合AIリーダーらが人権や主体性をAIに委譲しようとするAnthropicのビジョンに反論</span>
+            <span class="src">Axios</span>
           </a>
         </li>
         </ul>
