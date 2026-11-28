@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1116">
+<title>Claude News Digest — 2026.11.28</title>
+<style>
+  :root {
+    --bg:#0e1116; --surface:#151a21; --line:#232a33; --line2:#2c343e;
+    --text:#e6edf3; --muted:#8b98a5; --dim:#5b6672;
+    --amber:#f2b45c;
+    --mono: ui-monospace,"SF Mono","JetBrains Mono","Roboto Mono",Menlo,monospace;
+    --sans: -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",
+            "Noto Sans JP","BIZ UDPGothic","Segoe UI",sans-serif;
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--sans); line-height:1.65;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) 3rem env(safe-area-inset-left);
+  }
+  .wrap { max-width:680px; margin:0 auto; padding:0 18px; }
+
+  header { padding:26px 0 8px; }
+  .eyebrow {
+    font-family:var(--mono); font-size:11px; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--amber);
+  }
+  .date {
+    font-family:var(--mono); font-weight:600; letter-spacing:.02em;
+    font-size:34px; margin:6px 0 2px; font-variant-numeric:tabular-nums;
+  }
+  .date .wd { color:var(--dim); font-size:20px; margin-left:.4em; }
+  .status {
+    font-family:var(--mono); font-size:11.5px; color:var(--muted);
+    border:1px solid var(--line); border-radius:8px;
+    padding:9px 12px; margin-top:14px;
+    display:flex; flex-wrap:wrap; gap:6px 16px; align-items:center;
+  }
+  .status b { color:var(--text); font-weight:600; }
+  .status .amber { color:var(--amber); }
+  .status .sep { color:var(--line2); }
+  .pulse {
+    width:7px; height:7px; border-radius:50%; background:var(--amber);
+    box-shadow:0 0 0 0 rgba(242,180,92,.55); animation:pulse 2.6s ease-out infinite;
+  }
+  @keyframes pulse {
+    0%{box-shadow:0 0 0 0 rgba(242,180,92,.5);}
+    70%{box-shadow:0 0 0 7px rgba(242,180,92,0);}
+    100%{box-shadow:0 0 0 0 rgba(242,180,92,0);}
+  }
+
+  .summary { padding:22px 0 4px; }
+  .headline { font-size:22px; line-height:1.5; margin:0 0 10px; }
+  .lede { font-size:15px; color:var(--text); margin:0; }
+  .lede.muted { color:var(--muted); }
+
+  .panel {
+    border:1px solid var(--line); border-radius:12px;
+    background:var(--surface); padding:16px 16px 12px; margin-top:18px;
+  }
+  .panel-title {
+    font-family:var(--mono); font-size:11px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--amber); margin:0 0 12px;
+  }
+
+  .arts { list-style:none; margin:0; padding:0; }
+  .art { border-top:1px solid var(--line); }
+  .art:first-child { border-top:0; }
+  .art a {
+    display:block; padding:11px 2px; text-decoration:none; color:inherit;
+  }
+  .art a:hover .ttl { color:var(--amber); }
+  .art a:focus-visible { outline:2px solid var(--amber); outline-offset:2px; border-radius:6px; }
+  .cat {
+    display:inline-block; font-family:var(--mono); font-size:10.5px;
+    color:var(--amber); border:1px solid var(--line2); border-radius:4px;
+    padding:1px 6px; margin-bottom:4px; letter-spacing:.03em;
+  }
+  .ttl { display:block; font-size:14.5px; font-weight:500; line-height:1.5; }
+  .src {
+    display:block; font-family:var(--mono); font-size:11px;
+    color:var(--dim); margin-top:3px;
+  }
+
+  footer {
+    margin-top:26px; padding-top:16px; border-top:1px solid var(--line);
+    font-family:var(--mono); font-size:11px; color:var(--dim);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+  footer a { color:var(--muted); text-decoration:none; }
+
+  @media (prefers-reduced-motion: reduce) { .pulse { animation:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Claude News Digest</div>
+    <div class="date">2026.11.28<span class="wd"> 土</span></div>
+    <div class="status">
+      <span class="pulse" aria-hidden="true"></span>
+      <span>UPDATED <b>12:42</b> JST</span>
+      <span class="sep">/</span>
+      <span>取得 <b>43</b> 件 &rarr; 掲載 <b class="amber">20</b> 件</span>
+      <span class="sep">/</span>
+      <span>直近48h</span>
+    </div>
+  </header>
+
+  <main>
+      <section class="summary">
+        <h1 class="headline">「Claude Duet」の日本展開やAPIのRust移行など新展開が相次ぐ</h1>
+        <p class="lede">Anthropicは常駐型AIエージェント「Claude Duet」の試験提供を日本でも開始したほか、MCPサーバー経由でスキルを配信する新機能を公開した。また、Claude自らがコードを執筆して中核APIをRustへ再構築し、CPU消費量を70%削減させたことを明らかにした。さらに、AIエージェントの安全性検証を目的としたハニーポット構築や、研究阻害に関する指摘への回答など安全性への取り組みも示されている。</p>
+      </section>
+      <section class="panel">
+        <h2 class="panel-title">トピック分類</h2>
+        <svg viewBox="0 0 620 188" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="トピック分類別の記事件数" style="width:100%;height:auto;display:block;"><text x="166" y="23" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">新モデル・アップデート</text><rect x="176" y="8" width="150" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="334" y="24" fill="var(--muted)" font-size="12" font-family="var(--mono)">3</text><text x="166" y="59" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">Claude Code・開発ツール</text><rect x="176" y="44" width="300" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="484" y="60" fill="var(--muted)" font-size="12" font-family="var(--mono)">6</text><text x="166" y="95" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">規制・ポリシー・安全性</text><rect x="176" y="80" width="100" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="284" y="96" fill="var(--muted)" font-size="12" font-family="var(--mono)">2</text><text x="166" y="131" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">研究・技術</text><rect x="176" y="116" width="50" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="234" y="132" fill="var(--muted)" font-size="12" font-family="var(--mono)">1</text><text x="166" y="167" text-anchor="end" fill="var(--text)" font-size="12.5" font-family="var(--sans)">その他</text><rect x="176" y="152" width="400" height="22" rx="4" fill="var(--amber)" opacity="0.9"/><text x="584" y="168" fill="var(--muted)" font-size="12" font-family="var(--mono)">8</text></svg>
+      </section>
+      <section class="panel">
+        <h2 class="panel-title">重要トピック</h2>
+        <svg viewBox="0 0 620 324" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="本日の重要トピック" style="width:100%;height:auto;display:block;"><line x1="22" y1="24" x2="22" y2="258" stroke="var(--line2)" stroke-width="2"/><circle cx="22" cy="24" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="2.5"/><circle cx="22" cy="24" r="2.6" fill="var(--amber)"/><text x="44" y="25" fill="var(--text)" font-size="14.5" font-weight="600" font-family="var(--sans)">Claude Duet日本上陸</text><foreignObject x="42" y="34" width="566" height="58"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:12.5px;line-height:1.55;color:var(--muted);font-family:var(--sans);">アプリを閉じても常駐してメールや予定の確認作業を行うAIエージェントの試験提供が国内でも始まった。</div></foreignObject><circle cx="22" cy="102" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="2.5"/><circle cx="22" cy="102" r="2.6" fill="var(--amber)"/><text x="44" y="103" fill="var(--text)" font-size="14.5" font-weight="600" font-family="var(--sans)">Rust移行でCPU7割減</text><foreignObject x="42" y="112" width="566" height="58"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:12.5px;line-height:1.55;color:var(--muted);font-family:var(--sans);">Anthropicは中核APIの8割をClaude自身に執筆させてRustへ刷新し、リソース消費を大幅に改善した。</div></foreignObject><circle cx="22" cy="180" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="2.5"/><circle cx="22" cy="180" r="2.6" fill="var(--amber)"/><text x="44" y="181" fill="var(--text)" font-size="14.5" font-weight="600" font-family="var(--sans)">MCPの新機能ベータ公開</text><foreignObject x="42" y="190" width="566" height="58"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:12.5px;line-height:1.55;color:var(--muted);font-family:var(--sans);">MCPサーバーがスキル配信やバックグラウンドタスク実行を行える「Skills over MCP」などの提供を開始した。</div></foreignObject><circle cx="22" cy="258" r="7" fill="var(--bg)" stroke="var(--amber)" stroke-width="2.5"/><circle cx="22" cy="258" r="2.6" fill="var(--amber)"/><text x="44" y="259" fill="var(--text)" font-size="14.5" font-weight="600" font-family="var(--sans)">AI安全性の検証強化</text><foreignObject x="42" y="268" width="566" height="58"><div xmlns="http://www.w3.org/1999/xhtml" style="font-size:12.5px;line-height:1.55;color:var(--muted);font-family:var(--sans);">AIエージェントの脱走を検証するハニーポットの構築や、研究阻害の指摘に対する回答など安全性の取り組みが進む。</div></foreignObject></svg>
+      </section>
+      <section class="panel">
+        <h2 class="panel-title">参照記事(掲載 20 件)</h2>
+        <ul class="arts">
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE5RTUptNEd1TGVhSzFOb19NUHBHZk1ka3JwSzN1d1JCQ01jMG5mLXlvWDBLUzZvSHJOUVl3S2RJNlhNZ3ZwZ0JLOUlwNjlNb2FocXc?oc=5" target="_blank" rel="noopener">
+            <span class="cat">新モデル・アップデート</span>
+            <span class="ttl">AIエージェント「Claude Duet」が日本でも試験提供開始</span>
+            <span class="src">CNET Japan</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9sbHhRV2NNb2RBSWxlbDZiTHBIZWx2aXNKdjFXNk1LdXgzYlFUeW9NeDlrX0NaWkNjQXFyTGIzU1RMNFI3a1pmeTc2S0VsTG1xR21VQkd3Wi1EdWpMOGVaQ1BweGhETmtnaHVKcUlRNGFnUnJU?oc=5" target="_blank" rel="noopener">
+            <span class="cat">Claude Code・開発ツール</span>
+            <span class="ttl">AnthropicがAPIをRustで再構築、Claude自ら8割を執筆</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1IY2JKNG9vN0h3ZGplcHZtdE5CZnZqUmJUeHFVS1FGSWdlNnNmZFhGWVpoN3FPck5LRFNtUkk3WEpQaXRDSzFQMzhFeEZSWEZvU0tRSUQ2LW41QktZ?oc=5" target="_blank" rel="noopener">
+            <span class="cat">Claude Code・開発ツール</span>
+            <span class="ttl">MCP経由でスキルを配信する「Skills over MCP」がベータ公開</span>
+            <span class="src">gihyo.jp</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxNc3lpYTI3YlRsMFhoaWNjSlZqa2ZIUnBQZWVZNTZIY2JZR2F3LVJaU19wWGdqdm9NUXBNdGJHSmEtTDU3cDR3akZ2aXVkc3dxSFV1TDkzRndNTFdJVUtsTkItamJyMk1kRHhYdWtJSXBSTEpEbVZ3UUFZS0w5YUFfc2dielZKNGZBcUFSM0pZakxGb2xuV0R1WnFfY0pCN0RZUjFlVmFIUjlGSmxneU15aC1QNmJqZ3lsWTUxV3kxTkFJd0hKZFVIcFczNVk5MnlBeDVYNdIB2gFBVV95cUxQaVNta1lSUTVVTzlxMVEzUDV4Vkx5Z1FuZ3pIU3BObi1pamwwQmJObE1GbVRlc2ZZWWl1OE5IZnZNeUduWUx3NURHRG9qcEg4NUpMMEV5LVY1dGVaOVhlUDZLVDNrcnh3Z1U0ZlBCSVFxSVdzbDV5S210NU1tWVNzdXRteXRqYzdROEtOaWhrX250ZWdyU0FnRGo2aDl3Q2pNT0J5TU5TckF6eTRLd0FudDhvOEtlRDFBSVdFc3VUSW5YR2puRk9fNFZxUDB3bGE1Qy0wcFlPZ3BjQQ?oc=5" target="_blank" rel="noopener">
+            <span class="cat">Claude Code・開発ツール</span>
+            <span class="ttl">Claudeで作成したツールをMac・Windowsアプリ化する機能が登場</span>
+            <span class="src">Wccftech</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNbzZmVHNueXZlYVlWR3kySVdJTkptRkVsTDR2dmxGV3l4ejdpbjBlLVR1cTVkS1RVbXhQSEVyX3NFX0ZkYmU1Y2VTQ1lCYXlYTU5LaVZlUmxZcmVlZ3p0N0FZY2Z1RzdfY1J6Y3MxODg1eVBTN09QUnUtTHNXLU5pTl9xVkZJWXZYMk13bFd3?oc=5" target="_blank" rel="noopener">
+            <span class="cat">Claude Code・開発ツール</span>
+            <span class="ttl">GitHubのPR自動検証・修正を行う「Claude Ship」が発表</span>
+            <span class="src">TechRepublic</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1ndVJPNWRtVFlNakFnNnNxR21UNXBTTG90bzIxUHpweWFSUktqc1FtQlJ6Zi1mWEtyRy12dmhLM0xqa292eExaWHktcHFibERmV1hyMGlSNE9kalltTXNjYnFRVlV2MTNwVGpYSldGWS1fYnlt?oc=5" target="_blank" rel="noopener">
+            <span class="cat">新モデル・アップデート</span>
+            <span class="ttl">コードをアニメーション変換する未公開Claudeモデルが浮上</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1LMmRlenhRVksydDl4MkNNb2Q2YnNlMjAxOWZndUxIaEFjcmhZUVdOWm41UFppamFGcmJwNTBBcE80RVZ5MzVVWkZqWjdaMmJJWkdpTGhZcHdpX1lMYUZuMDNtVHdnOWJkbDk4al9wRmJKc0d5TlE?oc=5" target="_blank" rel="noopener">
+            <span class="cat">規制・ポリシー・安全性</span>
+            <span class="ttl">Claudeによる研究妨害の指摘に対しAnthropicが回答</span>
+            <span class="src">BigGo Finance</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQU3p0MzRlaGFoMHd1a0tLNkJ6YTBCRUZ6TGxMVHJvZGdTSVNZWkxMLWU0M2RMUE5mTU9CNEMxVGlKZVdXVjRNdWZUY0tIdV9NSGdMc2ZhVmdlN2R6NXNwUEM2OUc3c2NQUjJrWDdmOXVtLW83Sy15M05idk44bU9JWmk4ZTFRR0tIbjZHa2NvRDZ4WlQxbjc3XzhYOFl3bk0tc1J4Z3V2MzBzdw?oc=5" target="_blank" rel="noopener">
+            <span class="cat">研究・技術</span>
+            <span class="ttl">AnthropicがAIエージェントの脱走検証用ハニーポットを構築</span>
+            <span class="src">Malwarebytes</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBTSE9JM2JXZUZQdzBDcVVmel84TEVGQzJ1MUdSQzk2NVhSZTVqa2ZuR2hkZ2JIUVdFQ2pYTmZialhNWUJybm9ZcG1OVmxfaTcyV3cwc0JRMVB0V0xNY2ozanNpZmpfYWU1ZzR6ZnZ5NldMSEd1aFlrQjVn0gGOAUFVX3lxTE82SHBJOUlsSktXeGpCcmg2d0lJTm9yTGYxdWxkbDAyU0tYZU5PN2xFbGZfekhDcmJGR21XcnYtRktaak5jWHJlc2NhbmFlR0dQSkRHYklCa1lSbjEtcEF6NGdPT3RBRUpRTDdfcVI4bmlwS0ZDTERqU0F2VnJWSHdkYlUtRXFCcWZwaGZHNGc?oc=5" target="_blank" rel="noopener">
+            <span class="cat">その他</span>
+            <span class="ttl">Anthropicが開発支援を強みに企業向けAI領域でOpenAIを逆転</span>
+            <span class="src">Chosunbiz</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPRjAyQ3lCM1d6S2pFaFU2TndMeF95a0xtdUM4VC1kMEtxLXl1MHR1azEtekZKREhpOTdmd0p4X2ZOcHppVlFqeUpsWEZKWnBlNW9vQ0hlVGRoR1RwMDNjeVNJdU1KYnFIQVRGc2xqT21XM0FVc3BFMGlpc3VPajV1TDZrdFhFUQ?oc=5" target="_blank" rel="noopener">
+            <span class="cat">その他</span>
+            <span class="ttl">KPMGがセキュリティサービスにClaude Mythosを採用</span>
+            <span class="src">Yahoo Finance</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiQkFVX3lxTE9qU1l3TWZVbjVhcUZMV0UwdW5xTzRVWHlUWE5qV0UtWjVBWkNzbFNOS05LR0lPa0c5M1JILVRjampCQQ?oc=5" target="_blank" rel="noopener">
+            <span class="cat">Claude Code・開発ツール</span>
+            <span class="ttl">Claude Codeの主要開発者2名がOpenAIへ移籍</span>
+            <span class="src">shiritomo</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFAwRWFqUkE3UG5PV3B6Y0pCUy1SYkFDZUVUUjQ0QmtVMDVpUUY5MVlmSHI1WVpwSEhTd0FiZ3hIXzRYbzNZd25VYW5vanFiZlg2aWk1UFNxaTN3OWs5cS1Xd3Q0ZVdPNjdhR1FQazR0TUZyemxZZ3c?oc=5" target="_blank" rel="noopener">
+            <span class="cat">その他</span>
+            <span class="ttl">Anthropic株価が11%上昇しIPO発行価格の83ドルを奪還</span>
+            <span class="src">BigGo Finance</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxNZUZ3RGRZb3hVNmswTFNpVmpjTS0wOFBuNngwYmt2ZGN6X1dNYzlKd0R3cEVKQW9VM3YwUjdwUGRwSlJVVWpJTXctaXhBeXpuaU8xMHhJWjJBVlhGTkFhbWd4dGhRd3RJcTBLS2JaWHkyajdNcG9VSnJGVjI4TDhIcDM4RUQ4X1U1R2w4Q2RPWTJqMDUzNTBkOTZoR3EwRVdOVWp4UnJEVy1qMzVDSzVLaDBadVZIWDVhTS1PS0pRWDFLcE5KTjRWMnF3?oc=5" target="_blank" rel="noopener">
+            <span class="cat">その他</span>
+            <span class="ttl">Anthropicの年換算売上が810億ドル規模に達したとの報道</span>
+            <span class="src">24/7 Wall St.</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxNbUd5Ti0tSEhKREU3VnhCQy1aY3E5cVpCME9aaWRQZm81c3FwUVN0bWR6RWxVOXFVLTNVS3FrLWdhNEZwZXdac2NuVU5pb3Q2bmNPWnlqenFEdzdZZEZBLV9sd1ZqWmdrdXlITDhqdDJiUGU0SW9tOUV6R2RVWW5INzVhVGFHbXJkanVTTGpSVWQ?oc=5" target="_blank" rel="noopener">
+            <span class="cat">新モデル・アップデート</span>
+            <span class="ttl">AnthropicがClaude向けGoogle Drive連携機能を準備中</span>
+            <span class="src">TestingCatalog AI News</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxPaXl4ZFZEMlREX0dhWVVsNzRnY29qMTdUR29XcW82dVZHWHNVajd5R0ZjaTh3QnhxZkxiNWlZNFRYV0JNUWN3QjdvZzRTMzc1Wk9mYVF2U0hkVG5Ma21xZWp3UHRVSnRickdISGdGaEdyQVBVNzUxUUxsRW1CakhPWjgxbDRaOEotMDdrVV81NTd3Y0tCWl9pS3kxMWljLXNLWWdtdVktcXkzaXQyWVpMNzlJSDdlcGg5UUIxQjF1QWRzZF82NkZSU053?oc=5" target="_blank" rel="noopener">
+            <span class="cat">その他</span>
+            <span class="ttl">1PasswordがClaudeの利用支出上限管理機能を実装</span>
+            <span class="src">DXable News</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBsdWJ0YXVUMGtKUUQ1QXUxMG05bUNqNVJLdWdWd1otNGpvUmVmS3FNXzNjVGw3REtWRHBpRUpUazZIZENrelZ3b2MydlNQbVNXalRGNTAtYjY4S2x2RmpvOG94REg2VkVaN1VfcVFDeVJxRDhZ?oc=5" target="_blank" rel="noopener">
+            <span class="cat">その他</span>
+            <span class="ttl">ブラックフライデー期間中もAnthropicはAI割引を実施せず</span>
+            <span class="src">BigGo ファイナンス</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFAtN0llU3lZSWNoeUI4MkhwUjNCQW91Q0x5M2NzMmhyU2FoZ0JKNG9rd1NlZGZGMkVhQUloSlNOZjlGUnpaS0NmLUNIX3NKSWtZS1VSWE1HNUZJXzFoUjNnWXp2TzhRU0tVQ2xYVzlPdndZclRGSjFCbk5lQ3Q?oc=5" target="_blank" rel="noopener">
+            <span class="cat">Claude Code・開発ツール</span>
+            <span class="ttl">Claude CodeがVS Code向け統合機能を刷新</span>
+            <span class="src">Vietnam.vn</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxNN0tLeHhIUXZiclNrSlZmcy1VUzFWb0pQN2RuX2ExcGlZaWtabFJaQ3pyTHpxTnNhRms3NDNJT0Y2eFkzeFVWM3VMVXhTdTNqNjY4SjJ1SDhDejQtamw2M0RKZWdXYzlsczJ0UkZEV1RXNUtRNndFaEotNzJ1bzh4VHZiUmdjNGY0RnRlUg?oc=5" target="_blank" rel="noopener">
+            <span class="cat">その他</span>
+            <span class="ttl">AI普及に伴い社内の昇進評価基準が変化とAnthropic幹部が説明</span>
+            <span class="src">Business Insider</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNWkMxeF9wbm1pMEs1NlFUbVQwX0ZDUlE4TzBCb2dreHZNZjRrNGp4MDF1d2t4V0xHRUJMOVE5TkhQaXlwYUh0S3Q3Rk5WSzEwb3FEYU5UQ0R2ZVpUaEZyQmxWRkZ5MldrT1lPTk5wZ05pbzQxZlp5RWpvbEJQcnduNE1nZkFXYUJtUnR0c1hhUXdvenRDS0E1TWtEZTFIM29oOFE?oc=5" target="_blank" rel="noopener">
+            <span class="cat">規制・ポリシー・安全性</span>
+            <span class="ttl">Claudeの学習データオプトアウト設定に関する議論が浮上</span>
+            <span class="src">explainx.ai</span>
+          </a>
+        </li>
+        <li class="art">
+          <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPemxTUUNLM2J5VjUybmstcXNxWm1faTI0dk1pdnV0RDByWmxxR2xJUGZMeVhOMHV2WWgyWVE0U1doRzhBUDZndmFxTmNOUHdobE9iSEp6dUw0akNVWWNRb1Rrb3RjT001NWJ5X0RaYjhQUEZjNGt5Zk1mM3FQTDMzYlhDdkJKa0ZQcnJld3ZUQmlDNlZU?oc=5" target="_blank" rel="noopener">
+            <span class="cat">その他</span>
+            <span class="ttl">ClaudeがFable 5.2関連の問題修正を公表</span>
+            <span class="src">Breakingthenews.net</span>
+          </a>
+        </li>
+        </ul>
+      </section>
+  </main>
+
+  <footer>
+    <span>自動生成 · GitHub Actions</span>
+    <a href="archive/">過去ログ</a>
+  </footer>
+</div>
+</body>
+</html>
